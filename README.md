@@ -65,3 +65,17 @@ The `crafting` module defines simple recipes and a `craft` function to combine i
 A minimal Godot project is stored under the `godot/` directory. It contains a
 main menu and inventory screen layout used for UI prototyping. See
 [docs/ui.md](docs/ui.md) for details on opening the project and manual testing.
+=======
+### Logging Utility
+
+Use `logging_util.create_logger` to create loggers for the game. See [docs/logging_util.md](docs/logging_util.md) for details.
+=======
+### CLI Seed Option
+
+`src/main.py` includes a command line argument for setting the world generation seed. See [docs/cli_seed.md](docs/cli_seed.md) for usage.
+=======
+
+### Save and Load System
+
+The `save_load` module saves the player's state, NPCs and map data to a JSON file and reloads it later. See [docs/save_load.md](docs/save_load.md) for details.
+

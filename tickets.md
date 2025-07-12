@@ -86,11 +86,11 @@
 - Document usage in `docs/crafting.md` and update `README.md`.
 
 ## Ticket 9 - Save and Load System
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Implement `src/save_load.py` with functions to save and load game state as JSON.
 - Include player inventory, NPC stats, and map data in the saved state.
 - Add tests in `tests/test_save_load.py` to verify round-trip integrity.
@@ -98,11 +98,11 @@
 
 
 ## Ticket 10 - CLI Seed Input
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+  - [x] Reviewed
+  - [x] Documented
 - Add command line option to set world generation seed when launching the game.
 - Implement argument parsing in `src/main.py` or a new module.
 - Write tests in `tests/test_cli_seed.py` for argument handling.
@@ -110,11 +110,11 @@
 
 
 ## Ticket 11 - Logging Utility
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Create a logging utility in `src/logging_util.py` for consistent game logging.
 - Allow configurable log levels and output file path.
 - Write tests in `tests/test_logging_util.py` for log creation and formatting.
