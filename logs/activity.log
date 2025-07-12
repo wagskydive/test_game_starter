@@ -184,3 +184,10 @@ Sat Jul 12 19:19:04 UTC 2025 - Started Ticket 63: CLI Map Size Options
 Sat Jul 12 19:19:59 UTC 2025 - Implement CLI map size options
 Sat Jul 12 19:20:23 UTC 2025 - All tests pass for Ticket 63
 Sat Jul 12 19:20:49 UTC 2025 - Reviewed Ticket 63
+Sat Jul 12 19:36:29 UTC 2025 - Starting Ticket 64: Document missing dependencies
+Sat Jul 12 19:36:30 UTC 2025 - Marked Ticket 64 as Started
+Sat Jul 12 19:38:00 UTC 2025 - Added Pillow to requirements and updated docs
+Sat Jul 12 19:38:02 UTC 2025 - Ran pytest after documentation updates
+Sat Jul 12 19:38:03 UTC 2025 - Marked Ticket 64 as Coded, Tested, Reviewed and Documented
+Sat Jul 12 19:38:52 UTC 2025 - Added pillow to requirements.txt
+Sat Jul 12 19:39:03 UTC 2025 - Completed Ticket 64
