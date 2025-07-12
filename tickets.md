@@ -76,11 +76,11 @@ Integrate Tiny Town tileset into the project.
 Integrate Roguelike Characters sprites into the project.
 
 ## Ticket 10 - Character System Using Assets
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Create a system for characters using the downloaded sprite layers.
 
 ## Ticket 11 - Map Tileset Integration
