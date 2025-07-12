@@ -7,7 +7,7 @@ This project now includes a basic Godot 4 setup under the `godot/` directory.
 - Python 3.10+
 
 ## Setup Steps
-1. Install Python requirements:
+1. Install Python requirements (requires Pillow for asset generation):
    ```bash
    pip install -r requirements.txt
    ```
@@ -19,3 +19,5 @@ Automated tests for the Python modules can be run using:
 pytest -q
 ```
 
+
+**Note:** This project is still in development. Asset packs will be downloaded at runtime once fully integrated.

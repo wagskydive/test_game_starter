@@ -1,5 +1,7 @@
 # Game Starter Project
 
+**Development Status: In progress. Asset packs are not fully integrated and the project is not ready for deployment.**
+
 This repository begins the setup for the procedural RPG described in `design.md`.
 
 ## Setup
@@ -19,7 +21,7 @@ This will create the following directories:
 - `tests`
 - `logs`
 
-It also ensures `requirements.txt` exists with required packages and installs them. The initial dependency is `pytest` for testing.
+It also ensures `requirements.txt` exists with required packages and installs them. The dependencies include `pytest` for testing and `pillow` for asset generation.
 
 To execute the automated tests:
 
