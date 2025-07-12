@@ -138,3 +138,7 @@ Sat Jul 12 17:34:20 UTC 2025 - Added procedural quest generator
 Sat Jul 12 17:34:22 UTC 2025 - Ran pytest
 Sat Jul 12 17:35:43 UTC 2025 - Expanded event system with callbacks
 Sat Jul 12 17:35:45 UTC 2025 - Ran pytest
+Sat Jul 12 17:41:00 UTC 2025 - Starting Ticket 17: Faction Goals and Group AI
+Sat Jul 12 17:42:31 UTC 2025 - Starting Ticket 18: Offline LLM Integration
+Sat Jul 12 17:44:02 UTC 2025 - Implemented faction system and offline LLM support
+Sat Jul 12 17:44:48 UTC 2025 - Updated docs for factions and offline LLM
