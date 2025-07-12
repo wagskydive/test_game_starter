@@ -79,16 +79,16 @@ Integrate Roguelike Characters sprites into the project.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Create a system for characters using the downloaded sprite layers.
 
 ## Ticket 11 - Map Tileset Integration
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Map the Tiny Town tileset to the procedural map generator.
 
 ## Ticket 12 - Art Palette and Layered Sprites
