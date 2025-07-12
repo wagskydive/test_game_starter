@@ -121,3 +121,9 @@ Sat Jul 12 15:49:26 UTC 2025 - Refactored codebase, updated imports and tests
 Sat Jul 12 17:16:35 UTC 2025 - Starting Ticket 10: Character System Using Assets
 Sat Jul 12 17:16:36 UTC 2025 - Implemented character_sprites module and tests
 Sat Jul 12 17:16:38 UTC 2025 - Documented character sprite system and updated README
+Sat Jul 12 17:22:52 UTC 2025 - Marked Ticket 10 as Reviewed
+Sat Jul 12 17:22:53 UTC 2025 - Starting Ticket 11: Map Tileset Integration
+Sat Jul 12 17:23:36 UTC 2025 - Implemented tile mapping module and tests
+Sat Jul 12 17:23:37 UTC 2025 - Documented tileset mapping
+Sat Jul 12 17:23:39 UTC 2025 - Ran pytest after Ticket 11
+Sat Jul 12 17:23:40 UTC 2025 - Marked Ticket 11 complete

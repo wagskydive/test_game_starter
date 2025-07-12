@@ -113,6 +113,8 @@ The helper in `asset_manager.ensure_assets` downloads Kenney asset packs (enviro
 `character_sprites.generate_character` builds a basic appearance by selecting
 sprite layers from the indexed `roguelike-characters` pack. See
 [docs/character_sprites.md](docs/character_sprites.md).
+`tile_mapping.load_tile_map` resolves tiles from the world generator to sprite files
+in the Tiny Town pack. See [docs/map_tileset.md](docs/map_tileset.md).
 See [docs/ui.md](docs/ui.md) for the basic UI setup.
 
 ### LLM Integration
