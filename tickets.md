@@ -11,10 +11,11 @@
   - sets up folders (src, scripts, docs, config, tests, logs)
   - installs dependencies and adds them to `requirements.txt`
 - Run the project-setup.bat script
+
 ## Ticket 2 - Update Agents Instructions
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 - Review the design document and expand `AGENTS.md` with detailed project guidelines and iterative workflow instructions.
