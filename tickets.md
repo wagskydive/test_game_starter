@@ -41,11 +41,11 @@ Configure automated tests using Godot's testing framework.
 Provide instructions to build the Godot project and install dependencies.
 
 ## Ticket 6 - Basic UI Setup
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Establish initial UI scene in Godot with the asset pack, choose buttons and panels.
 Include a simple main menu and inventory screen layout.
 Add tests using Godot's test framework if possible or provide manual steps.

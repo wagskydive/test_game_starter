@@ -1,0 +1,7 @@
+import os
+
+def test_main_menu_scene_exists():
+    assert os.path.isfile(os.path.join('godot', 'scenes', 'MainMenu.tscn'))
+
+def test_inventory_scene_exists():
+    assert os.path.isfile(os.path.join('godot', 'scenes', 'Inventory.tscn'))
