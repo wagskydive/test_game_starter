@@ -40,3 +40,24 @@ def test_npc_personality_and_faction():
     n.leave_faction()
     assert n.faction is None
 
+
+def test_npc_health_extensions():
+    n = NPC(name='Bob')
+    n.add_wound(5)
+    n.add_disease('flu')
+    assert n.health == 95
+    n.tick()
+    assert n.health == 93
+    n.heal(5)
+    n.heal_wound()
+    n.cure_disease('flu')
+    n.tick()
+    assert n.health == 98
+
+
+def test_npc_impressiveness_and_status():
+    n = NPC(name='Bob', status=90)
+    n.adjust_status(5)
+    assert n.status == 95
+    assert n.impressiveness == 5
+

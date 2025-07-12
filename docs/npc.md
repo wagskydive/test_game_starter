@@ -1,6 +1,9 @@
 # NPC Prototype
 
-The `npc` module defines a simple `NPC` dataclass representing a character with health, hunger and thirst values.
+The `npc` module defines a simple `NPC` dataclass representing a character with
+health, hunger and thirst values. NPCs also track `temperature`, `wounds` and
+`diseases` which lower health during `tick()`. The `impressiveness` field
+represents social standing and changes when `adjust_status()` is called.
 
 ## Usage
 
