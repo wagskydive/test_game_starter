@@ -570,9 +570,9 @@ Document in `docs/equipment.md`.
 - [x] Documented
 Add the Kenney UI Pack RPG Expansion as a runtime-downloadable asset. Index its file list in the asset database.
 ## Ticket 62 - Weather Effects on NPCs
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Modify NPC.tick to consider weather temperature when adjusting NPC temperature.
