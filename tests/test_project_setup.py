@@ -3,7 +3,9 @@ import subprocess
 import shutil
 
 SCRIPT_PATH = os.path.join('scripts', 'project-setup.bat')
-DIRECTORIES = ['src', 'docs', 'config', 'logs']  # directories script should create besides scripts/tests
+# directories script should create besides scripts/tests. 'src' is
+# preserved so other modules aren't removed during testing
+DIRECTORIES = ['docs', 'config']
 
 
 def run_script():
