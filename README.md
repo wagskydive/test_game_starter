@@ -59,3 +59,7 @@ The `player` module provides a `Player` class that inherits from `NPC` and inclu
 ### Crafting Prototype
 
 The `crafting` module defines simple recipes and a `craft` function to combine items in an inventory. See [docs/crafting.md](docs/crafting.md) for usage.
+
+### Logging Utility
+
+Use `logging_util.create_logger` to create loggers for the game. See [docs/logging_util.md](docs/logging_util.md) for details.

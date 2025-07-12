@@ -110,11 +110,11 @@
 
 
 ## Ticket 11 - Logging Utility
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Create a logging utility in `src/logging_util.py` for consistent game logging.
 - Allow configurable log levels and output file path.
 - Write tests in `tests/test_logging_util.py` for log creation and formatting.
