@@ -42,3 +42,13 @@ def test_nested_container():
     rock = Item(name='rock', volume=2.0)
     bag.contents.add(rock)
     assert rock in bag.contents.items
+
+
+def test_equipment_slots():
+    inv = Inventory()
+    helm = Item(name='helmet', slot='head')
+    inv.add(helm)
+    inv.equip(helm)
+    assert inv.equipment['head'] is helm
+    inv.unequip('head')
+    assert 'head' not in inv.equipment

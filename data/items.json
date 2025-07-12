@@ -1,0 +1,6 @@
+[
+  {"name": "wood", "weight": 1.0, "volume": 1.0, "quality": 0, "rarity": "common", "impressiveness": 0},
+  {"name": "stone", "weight": 2.0, "volume": 1.0, "quality": 0, "rarity": "common", "impressiveness": 0},
+  {"name": "iron ore", "weight": 3.0, "volume": 1.0, "quality": 0, "rarity": "uncommon", "impressiveness": 0},
+  {"name": "iron ingot", "weight": 2.5, "volume": 0.5, "quality": 0, "rarity": "uncommon", "impressiveness": 1}
+]

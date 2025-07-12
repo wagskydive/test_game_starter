@@ -279,22 +279,22 @@ Update tests to cover new attributes and grouping behavior.
 Document in `docs/tile_groups.md`.
 
 ## Ticket 34 - Expanded Item Definitions
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Move item and recipe data to JSON files loaded at runtime.
 Include base and intermediate materials from the design document.
 Add fields for quality, rarity and impressiveness.
 Document format in `docs/items_json.md`.
 
 ## Ticket 35 - Equipment Slots
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Extend `Item` and `Inventory` to handle equip slots (hand, head, torso, feet, etc.).
 Provide tests for equipping and unequipping items.
 Document in `docs/equipment.md`.
