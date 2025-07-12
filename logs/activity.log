@@ -163,3 +163,9 @@ Sat Jul 12 18:23:36 UTC 2025 - Implemented day/night cycle and energy
 Sat Jul 12 18:29:27 UTC 2025 - Started Ticket 20: Trading and Economy System
 Sat Jul 12 18:30:47 UTC 2025 - Implemented trading system and tests
 Sat Jul 12 18:30:49 UTC 2025 - Documented trading system
+Sat Jul 12 18:39:01 UTC 2025 - Started Ticket 21: NPC Families and Relationships
+Sat Jul 12 18:40:16 UTC 2025 - Implemented NPC families and relationships
+Sat Jul 12 18:40:39 UTC 2025 - Started Ticket 32: Settlements and Ruins Generation
+Sat Jul 12 18:47:55 UTC 2025 - Added settlements and updated worldgen
+Sat Jul 12 18:47:57 UTC 2025 - Started Ticket 33: Destructible Tiles
+Sat Jul 12 18:49:27 UTC 2025 - Added tile groups and destructible flags

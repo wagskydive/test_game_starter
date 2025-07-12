@@ -18,3 +18,6 @@ Run the module directly to see a small map printed to the console:
 ```bash
 python src/worldgen.py
 ```
+
+The generator also places settlements like villages and castles along with a
+rare `megalith` tile. See `docs/worldgen_settlements.md` for details.
