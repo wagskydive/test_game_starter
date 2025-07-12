@@ -46,7 +46,7 @@ Provide instructions to build the Godot project and install dependencies.
 - [ ] Tested
 - [ ] Reviewed
 - [ ] Documented
-Establish initial UI scene in Godot with placeholder buttons and panels.
+Establish initial UI scene in Godot with the asset pack, choose buttons and panels.
 Include a simple main menu and inventory screen layout.
 Add tests using Godot's test framework if possible or provide manual steps.
 Document UI setup in `docs/ui.md`.
