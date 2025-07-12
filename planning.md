@@ -35,6 +35,7 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 - [x] Visual assets are downloaded at runtime.
 - [ ] environment: https://kenney.nl/media/pages/assets/tiny-town/5e46f9e551-1735736916/kenney_tiny-town.zip
 - [ ] characters: https://kenney.nl/media/pages/assets/roguelike-characters/dbeea49dc8-1729196490/kenney_roguelike-characters.zip
+- [ ] ui: https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/885ad5ccc0-1677661824/kenney_ui-pack-rpg-expansion.zip
 - [ ] Create a system for the characters using the assets: https://kenney.nl/assets/roguelike-characters
 - [ ] Map the tilset from: https://kenney.nl/assets/tiny-town to our map generator
 - [ ] Art palette and layered sprites

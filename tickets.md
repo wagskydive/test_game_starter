@@ -562,3 +562,11 @@ Document in `docs/equipment.md`.
 - [x] Reviewed
 - [x] Documented
 - Replace Perlin noise world generator with wave function collapse algorithm.
+
+## Ticket 61 - UI Asset Pack
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Add the Kenney UI Pack RPG Expansion as a runtime-downloadable asset. Index its file list in the asset database.

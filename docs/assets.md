@@ -17,6 +17,7 @@ from asset_manager import ensure_assets
 ASSETS = {
     'tiny-town': 'https://kenney.nl/media/pages/assets/tiny-town/5e46f9e551-1735736916/kenney_tiny-town.zip',
     'roguelike-characters': 'https://kenney.nl/media/pages/assets/roguelike-characters/dbeea49dc8-1729196490/kenney_roguelike-characters.zip',
+    'ui-pack-rpg-expansion': 'https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/885ad5ccc0-1677661824/kenney_ui-pack-rpg-expansion.zip',
 }
 
 ensure_assets(ASSETS)
