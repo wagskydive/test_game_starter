@@ -75,3 +75,6 @@ Sat Jul 12 13:23:48 UTC 2025 - Starting Ticket 18: Basic Combat System
 Sat Jul 12 13:24:46 UTC 2025 - Implemented combat system and documentation
 Sat Jul 12 13:25:54 UTC 2025 - Ran pytest after combat addition
 Sat Jul 12 13:26:01 UTC 2025 - Marked Ticket 18 as Tested, Reviewed, Documented
+Sat Jul 12 13:30:52 UTC 2025 - Started Tickets 19-28
+Sat Jul 12 13:34:14 UTC 2025 - Implemented basic features for tickets 19-28
+Sat Jul 12 13:34:32 UTC 2025 - Ran pytest for tickets 19-28

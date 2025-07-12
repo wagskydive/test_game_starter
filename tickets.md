@@ -197,109 +197,109 @@
 - Document usage in `docs/combat.md`.
 
 ## Ticket 19 - NPC Needs System
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Expand NPC class with needs for rest, safety, social and status.
 - Implement periodic decay and satisfaction methods.
 - Add tests verifying needs update over time.
 - Document in `docs/npc_needs.md`.
 
 ## Ticket 20 - NPC Personalities and Factions
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Add personality traits and emotional states to NPCs.
 - Implement simple faction/group membership.
 - Provide tests for trait assignment and group storage.
 - Document in `docs/npc_personality.md`.
 
 ## Ticket 21 - Basic AI Behaviors
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Introduce behavior routines such as wandering, working and socializing.
 - Use pathfinding to move toward goals or resources.
 - Add unit tests for behavior selection logic.
 - Document in `docs/ai_behavior.md`.
 
 ## Ticket 22 - Story Anchor Framework
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Create data structures for hard and soft story goals.
 - Implement an event system that triggers anchors based on world state.
 - Write tests for anchor activation logic.
 - Document in `docs/story_anchors.md`.
 
 ## Ticket 23 - LLM Storytelling Integration
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Set up a stub interface for optional LLM-driven dialogue and quests.
 - Allow disabling LLM features when no model is present.
 - Add basic unit tests with mocked responses.
 - Document setup in `docs/llm_integration.md`.
 
 ## Ticket 24 - Expanded Save/Load
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Extend the save system to include story state and NPC factions.
 - Ensure backward compatibility with existing saves.
 - Write tests for the new data fields.
 - Update documentation in `docs/save_load.md`.
 
 ## Ticket 25 - UI Inventory and Menu Screens
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Build Godot scenes for inventory management and a main menu.
 - Hook up the Player inventory to display item icons.
 - Provide manual test steps until automated UI tests are in place.
 - Document in `docs/ui_inventory.md`.
 
 ## Ticket 26 - Asset Pipeline Setup
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Create script for generating placeholder sprites via Stable Diffusion or OpenGameArt assets.
 - Organize assets under an `assets/` directory with subfolders for tiles and characters.
 - Document the asset workflow in `docs/assets.md`.
 
 ## Ticket 27 - Modding Support Basics
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Define a mod loading system for custom items and maps via JSON packages.
 - Provide example mod files and loading logic.
 - Add tests for mod discovery and parsing.
 - Document usage in `docs/modding.md`.
 
 ## Ticket 28 - Advanced Logging Options
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Enhance `logging_util` with log rotation and console output.
 - Allow configuration via a file or environment variables.
 - Add tests covering new logging features.

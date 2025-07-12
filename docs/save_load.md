@@ -14,9 +14,10 @@ player.pick_up(Item(name='rock'))
 npcs = [NPC(name='Bob')]
 game_map = GameMap(width=2, height=2, data=[["plains", "forest"], ["hills", "water"]])
 
-save_game('save.json', player, npcs, game_map)
-player2, npcs2, map2 = load_game('save.json')
+story_state = {'chapter': 1}
+save_game('save.json', player, npcs, game_map, story_state)
+player2, npcs2, map2, story2 = load_game('save.json')
 ```
 
-`save_game` writes the player inventory, NPC stats and map data to a JSON file. `load_game` reconstructs the objects from that file.
+`save_game` writes the player inventory, NPC stats, map data and a `story_state` dictionary to a JSON file. `load_game` reconstructs the objects and returns the story state as well.
 
