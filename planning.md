@@ -47,24 +47,24 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 - [x] Expanded event system
 
 ### Step 6 – Advanced Systems
-- [ ] Faction goals and group AI
-- [ ] Offline LLM integration
-- [ ] Weather and seasons
-- [ ] Trading and economy
-- [ ] NPC families and relationships
-- [ ] Nested containers and volume limits
-- [ ] NPC health extensions
-- [ ] Social status and impressiveness
-- [ ] Crafting stations
-- [ ] Blueprints and skill requirements
-- [ ] Reinforcement learning NPCs
-- [ ] Advanced pathfinding
-- [ ] NPC daily schedules
-- [ ] Day/night cycle and energy
-- [ ] Documentation diagrams
-- [ ] Settlements and ruins generation
-- [ ] Destructible tiles and tile grouping
-- [ ] Expanded item definitions
-- [ ] Equipment slots
+- [x] Faction goals and group AI
+- [x] Offline LLM integration
+- [x] Weather and seasons
+- [x] Trading and economy
+- [x] NPC families and relationships
+- [x] Nested containers and volume limits
+- [x] NPC health extensions
+- [x] Social status and impressiveness
+- [x] Crafting stations
+- [x] Blueprints and skill requirements
+- [x] Reinforcement learning NPCs
+- [x] Advanced pathfinding
+- [x] NPC daily schedules
+- [x] Day/night cycle and energy
+- [x] Documentation diagrams
+- [x] Settlements and ruins generation
+- [x] Destructible tiles and tile grouping
+- [x] Expanded item definitions
+- [x] Equipment slots
 
 Use the checkboxes to monitor progress as features are completed.
