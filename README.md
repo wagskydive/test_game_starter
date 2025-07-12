@@ -83,9 +83,9 @@ for details.
 
 Use `logging_util.create_logger` to create loggers for the game. See [docs/logging_util.md](docs/logging_util.md) for details.
 =======
-### CLI Seed Option
+### CLI Options
 
-`src/main.py` includes a command line argument for setting the world generation seed. See [docs/cli_seed.md](docs/cli_seed.md) for usage.
+`src/main.py` accepts options for the world generation seed and map size. See [docs/cli_seed.md](docs/cli_seed.md) for usage.
 =======
 
 ### Save and Load System

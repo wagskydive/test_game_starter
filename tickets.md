@@ -576,3 +576,11 @@ Add the Kenney UI Pack RPG Expansion as a runtime-downloadable asset. Index its 
 - [x] Reviewed
 - [x] Documented
 Modify NPC.tick to consider weather temperature when adjusting NPC temperature.
+
+## Ticket 63 - CLI Map Size Options
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+Allow specifying map width and height via command line options.
