@@ -94,6 +94,12 @@ The `combat` module implements simple melee and ranged attack helpers. Damage
 is based on the attacking item's weight and reduces the weapon's durability.
 See [docs/combat.md](docs/combat.md) for usage.
 
+### Trading System
+
+NPCs have an `inventory` and `money` field. Use `trading.trade` to exchange
+items between characters for a price. See [docs/trading.md](docs/trading.md)
+for details.
+
 ### NPC Needs and Personality
 
 `NPC` now includes additional needs and personality traits. See

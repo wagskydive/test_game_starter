@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Optional, Set, Tuple, List, Dict
 
+from .item import Inventory
+
 from .animation_state import AnimationState
 
 from .game_map import GameMap
@@ -24,6 +26,8 @@ class NPC:
     diseases: List[str] = field(default_factory=list)
     impressiveness: int = 0
     crafting_skill: int = 0
+    inventory: Inventory = field(default_factory=Inventory)
+    money: int = 0
     schedule: Dict[str, str] = field(default_factory=dict)
     personality_traits: List[str] = field(default_factory=list)
     emotional_state: str = "neutral"
