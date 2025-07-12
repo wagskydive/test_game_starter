@@ -17,6 +17,8 @@ print(bob.hunger)  # 99
 ```
 
 Calling `tick()` decreases the hunger and thirst values but never below zero.
+If a `weather_temperature` value is supplied to `tick()`, the NPC's body
+temperature will gradually move toward that value.
 
 ## Movement
 

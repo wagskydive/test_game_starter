@@ -38,6 +38,7 @@ class NPC:
         social_rate: int = 0,
         status_rate: int = 0,
         temperature_rate: float = 0.0,
+        weather_temperature: float | None = None,
     ) -> None:
         """Advance time by reducing basic needs."""
         self.hunger = max(0, self.hunger - hunger_rate)
@@ -46,6 +47,8 @@ class NPC:
         self.safety = max(0, self.safety - safety_rate)
         self.social = max(0, self.social - social_rate)
         self.status = max(0, self.status - status_rate)
+        if weather_temperature is not None:
+            self.temperature += (weather_temperature - self.temperature) * 0.1
         self.temperature += temperature_rate
         if self.wounds:
             self.health = max(0, self.health - len(self.wounds))

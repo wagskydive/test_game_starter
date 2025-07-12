@@ -149,3 +149,6 @@ Sat Jul 12 17:53:22 UTC 2025 - Ran pytest
 Sat Jul 12 17:53:48 UTC 2025 - Added Pillow dependency
 Sat Jul 12 17:53:57 UTC 2025 - Ran pytest after adding weather system
 Sat Jul 12 17:55:18 UTC 2025 - Added new ticket for weather effects
+Sat Jul 12 18:05:11 UTC 2025 - Started Ticket 62
+Sat Jul 12 18:06:15 UTC 2025 - Added weather interaction to NPCs
+Sat Jul 12 18:06:16 UTC 2025 - Updated docs for weather effects

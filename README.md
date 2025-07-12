@@ -137,3 +137,4 @@ local model. See [docs/llm_integration.md](docs/llm_integration.md).
 ### Weather and Seasons
 
 Use the `WeatherSystem` module to cycle seasons every 30 days and pick random weather. See [docs/weather.md](docs/weather.md).
+NPCs can be affected by weather by passing `WeatherSystem.temperature` to `NPC.tick()`.

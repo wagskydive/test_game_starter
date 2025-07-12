@@ -4,6 +4,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from src.npc import NPC
+import pytest
 
 
 def test_npc_defaults():
@@ -63,4 +64,16 @@ def test_npc_impressiveness_and_status():
     n.adjust_status(5)
     assert n.status == 95
     assert n.impressiveness == 5
+
+
+def test_npc_temperature_adjusts_with_cold_weather():
+    n = NPC(name='Bob')
+    n.tick(weather_temperature=0.0)
+    assert n.temperature == pytest.approx(33.3, rel=1e-2)
+
+
+def test_npc_temperature_adjusts_with_hot_weather():
+    n = NPC(name='Bob')
+    n.tick(weather_temperature=40.0)
+    assert n.temperature == pytest.approx(37.3, rel=1e-2)
 
