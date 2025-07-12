@@ -24,11 +24,11 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 ## Roadmap and Milestones
 
 ### Step 3 - Godot migration
-- [ ] Create a Godot 4 project skeleton with scenes and folder structure
-- [ ] Port existing Python modules to GDScript or integrate via GDExtension
-- [ ] Hook up world generation, NPC, item and crafting systems in Godot
-- [ ] Configure automated tests using Godot's testing framework
-- [ ] Make an install and build guide for the end user
+- [x] Create a Godot 4 project skeleton with scenes and folder structure
+- [x] Port existing Python modules to GDScript or integrate via GDExtension
+- [x] Hook up world generation, NPC, item and crafting systems in Godot
+- [x] Configure automated tests using Godot's testing framework
+- [x] Make an install and build guide for the end user
 
 
 ### Step 4 – Visuals and UI
