@@ -1,13 +1,11 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from .npc import NPC
-from .item import Inventory, Item
+from .item import Item
 
 
 @dataclass
 class Player(NPC):
-    """Player character inheriting from NPC with an inventory."""
-
-    inventory: Inventory = field(default_factory=Inventory)
+    """Player character inheriting from NPC."""
 
     def pick_up(self, item: Item) -> None:
         """Add an item to the player's inventory."""

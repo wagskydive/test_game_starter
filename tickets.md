@@ -157,11 +157,11 @@ Support running an offline model via the Godot-LLM plugin.
 Simulate weather patterns and seasonal effects on temperature.
 
 ## Ticket 20 - Trading and Economy System
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Implement a currency and trading mechanics with NPCs.
 
 ## Ticket 21 - NPC Families and Relationships

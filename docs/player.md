@@ -1,6 +1,7 @@
 # Player Prototype
 
-The `player` module defines a `Player` class that extends `NPC` with an `Inventory`.
+The `player` module defines a `Player` class that extends `NPC`. NPCs already
+contain an `inventory` and `money` attribute used for trading.
 
 ## Usage
 
