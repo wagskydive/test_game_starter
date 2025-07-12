@@ -73,3 +73,14 @@
 - Extend `NPC` with `x` and `y` coordinates and a `move` method optionally bounded by a map.
 - Write tests for movement and map bounds.
 - Document map and movement usage.
+
+## Ticket 8 - Basic Crafting System
+
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+- Implement `src/crafting.py` with a `Recipe` dataclass and a `craft` function that consumes ingredients from an `Inventory` and returns the crafted `Item`.
+- Add tests in `tests/test_crafting.py` for crafting success and failure when materials are missing.
+- Document usage in `docs/crafting.md` and update `README.md`.
