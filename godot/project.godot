@@ -1,0 +1,7 @@
+; Engine configuration file
+; It is recommended that you edit the project using the Godot editor.
+config_version=5
+
+[application]
+config/name="After the Fall"
+run/main_scene="res://scenes/Main.tscn"

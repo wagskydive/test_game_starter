@@ -1,43 +1,43 @@
 # Tickets
 
 ## Ticket 1 - Godot Project Skeleton
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Add a basic Godot project with scenes and integrate Python modules.
 
 ## Ticket 2 - Port Python Modules to GDScript
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Reimplement existing Python systems in GDScript or provide GDExtension bindings.
 
 ## Ticket 3 - Integrate Game Systems in Godot
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Hook up world generation, NPC, item and crafting logic inside Godot scenes.
 
 ## Ticket 4 - Godot Test Setup
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Configure automated tests using Godot's testing framework.
 
 ## Ticket 5 - Build and Install Guide
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Provide instructions to build the Godot project and install dependencies.
 
 ## Ticket 6 - Basic UI Setup
