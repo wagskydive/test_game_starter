@@ -1,7 +1,7 @@
 # World Generation
 
 The `worldgen` module provides a simple prototype for generating a 2D tile map.
-It uses the [`noise`](https://pypi.org/project/noise/) library to produce Perlin noise and maps the values to terrain types.
+It uses a lightweight **wave function collapse** algorithm to arrange tiles according to adjacency rules.
 
 ## Usage
 

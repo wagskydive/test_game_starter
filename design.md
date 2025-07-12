@@ -52,7 +52,7 @@
 
 ## 4. World Generation
 
-- **Procedurally generated tile map** (Perlin noise for biomes: forest, hills, rivers, plains).
+- **Procedurally generated tile map** (wave function collapse for biomes: forest, hills, rivers, plains).
 - **Settlements:** Villages, castles, ruins, dungeons, trade posts.
 - **Megalithic ruins:** Uniquely placed, indestructible or hard-to-destroy tiles.
 - **Destructibility:** Everything but ancient megaliths can be destroyed, moved, or rebuilt.
