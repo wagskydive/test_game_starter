@@ -59,3 +59,7 @@ The `player` module provides a `Player` class that inherits from `NPC` and inclu
 ### Crafting Prototype
 
 The `crafting` module defines simple recipes and a `craft` function to combine items in an inventory. See [docs/crafting.md](docs/crafting.md) for usage.
+
+### CLI Seed Option
+
+`src/main.py` includes a command line argument for setting the world generation seed. See [docs/cli_seed.md](docs/cli_seed.md) for usage.

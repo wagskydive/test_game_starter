@@ -98,11 +98,11 @@
 
 
 ## Ticket 10 - CLI Seed Input
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+  - [x] Reviewed
+  - [x] Documented
 - Add command line option to set world generation seed when launching the game.
 - Implement argument parsing in `src/main.py` or a new module.
 - Write tests in `tests/test_cli_seed.py` for argument handling.
