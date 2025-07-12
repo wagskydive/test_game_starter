@@ -122,11 +122,11 @@
 
 
 ## Ticket 12 - Basic UI Setup
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Establish initial UI scene in Godot with placeholder buttons and panels.
 - Include a simple main menu and inventory screen layout.
 - Add tests using Godot's test framework if possible or provide manual steps.
