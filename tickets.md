@@ -91,46 +91,45 @@ Create a system for characters using the downloaded sprite layers.
 - [x] Documented
 Map the Tiny Town tileset to the procedural map generator.
 
-## Ticket 12 - Art Palette and Layered Sprites
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Define a common color palette and layered sprite format.
 Update asset pipeline to generate placeholder layers.
 
 ## Ticket 13 - NPC Animation States
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Implement animations for idle, walk, angry, excited and sitting.
 
 ## Ticket 14 - UI Style Pass and New Screens
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Apply consistent styling to menus and inventory.
 Add screens for character stats and crafting.
 
 ## Ticket 15 - Procedural Quest Generator
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Generate quests procedurally when no LLM is available.
 
 ## Ticket 16 - Expanded Event System
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Extend the event framework to support complex story triggers.
 
 ## Ticket 17 - Faction Goals and Group AI

@@ -8,6 +8,7 @@ class StoryAnchor:
     hard: bool = False
     triggered: bool = False
     condition: Callable[[], bool] | None = None
+    on_trigger: Callable[["StoryAnchor"], None] | None = None
 
 
 class EventSystem:
@@ -23,5 +24,7 @@ class EventSystem:
         for a in self.anchors:
             if not a.triggered and (a.condition is None or a.condition()):
                 a.triggered = True
+                if a.on_trigger:
+                    a.on_trigger(a)
                 triggered.append(a)
         return triggered

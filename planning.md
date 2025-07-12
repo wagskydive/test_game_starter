@@ -38,13 +38,13 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 - [ ] ui: https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/885ad5ccc0-1677661824/kenney_ui-pack-rpg-expansion.zip
 - [ ] Create a system for the characters using the assets: https://kenney.nl/assets/roguelike-characters
 - [ ] Map the tilset from: https://kenney.nl/assets/tiny-town to our map generator
-- [ ] Art palette and layered sprites
-- [ ] UI style pass and additional screens
-- [ ] NPC animation states
+- [x] Art palette and layered sprites
+- [x] UI style pass and additional screens
+- [x] NPC animation states
 
 ### Step 5 – Story and Events
-- [ ] Procedural quest generator
-- [ ] Expanded event system
+- [x] Procedural quest generator
+- [x] Expanded event system
 
 ### Step 6 – Advanced Systems
 - [ ] Faction goals and group AI

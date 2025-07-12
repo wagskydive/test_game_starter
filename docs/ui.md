@@ -7,5 +7,9 @@ under `godot/scenes/`.
   Inventory buttons.
 * **Inventory.tscn** is a simple Control with an `ItemList` to display player
   items.
+* **CharacterStats.tscn** shows basic stats for the selected character.
+* **Crafting.tscn** lists available recipes.
+
+All scenes share `assets/ui/theme.tres` for consistent styling.
 
 Open the project in the Godot editor to modify layouts or connect signals.

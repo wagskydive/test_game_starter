@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from typing import Optional, Set, Tuple, List
 
+from .animation_state import AnimationState
+
 from .game_map import GameMap
 
 
@@ -23,6 +25,7 @@ class NPC:
     personality_traits: List[str] = field(default_factory=list)
     emotional_state: str = "neutral"
     faction: Optional[str] = None
+    animation_state: AnimationState = AnimationState.IDLE
     x: int = 0
     y: int = 0
 
@@ -90,6 +93,10 @@ class NPC:
 
     def leave_faction(self) -> None:
         self.faction = None
+
+    def set_animation(self, state: AnimationState) -> None:
+        """Change the current animation state."""
+        self.animation_state = state
 
     def move(
         self,
