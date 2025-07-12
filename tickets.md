@@ -471,3 +471,11 @@
 - [ ] Documented
 - Implement a day/night cycle and energy stat affecting actions.
 
+
+## Ticket 49 - Planning Document
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+- Create planning.md summarizing completed features and future milestones.
