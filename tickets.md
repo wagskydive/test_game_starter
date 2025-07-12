@@ -86,11 +86,11 @@
 - Document usage in `docs/crafting.md` and update `README.md`.
 
 ## Ticket 9 - Save and Load System
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Implement `src/save_load.py` with functions to save and load game state as JSON.
 - Include player inventory, NPC stats, and map data in the saved state.
 - Add tests in `tests/test_save_load.py` to verify round-trip integrity.

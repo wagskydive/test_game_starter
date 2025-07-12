@@ -63,3 +63,14 @@ The `crafting` module defines simple recipes and a `craft` function to combine i
 ### CLI Seed Option
 
 `src/main.py` includes a command line argument for setting the world generation seed. See [docs/cli_seed.md](docs/cli_seed.md) for usage.
+=======
+
+### Save and Load System
+
+The `save_load` module saves the player's state, NPCs and map data to a JSON file and reloads it later. See [docs/save_load.md](docs/save_load.md) for details.
+
+
+
+
+
+
