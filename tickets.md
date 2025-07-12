@@ -29,3 +29,14 @@
 - Create a Python module `src/worldgen.py` that generates a 2D tile map using Perlin noise.
 - Add unit tests under `tests/test_worldgen.py` to validate map dimensions and deterministic output when a seed is provided.
 
+
+## Ticket 4 - Item and Inventory Prototype
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+- Create `src/item.py` defining an `Item` dataclass with basic stats.
+- Add an `Inventory` class for adding/removing items and computing total weight.
+- Write unit tests in `tests/test_item.py` for item creation and inventory management.
+- Document usage in `docs/item.md`.
