@@ -18,3 +18,11 @@ Sat Jul 12 11:55:38 UTC 2025 - Updated project setup script to ensure noise inst
 Sat Jul 12 11:55:39 UTC 2025 - Added world generation documentation
 Sat Jul 12 11:55:40 UTC 2025 - Marked Ticket 3 as reviewed and documented
 Sat Jul 12 11:55:41 UTC 2025 - Ran pytest after updates
+Sat Jul 12 12:26:14 UTC 2025 - Starting Ticket 4: Item and Inventory Prototype
+Sat Jul 12 12:26:15 UTC 2025 - Marked Ticket 4 as Started
+Sat Jul 12 12:27:05 UTC 2025 - Implemented Item and Inventory prototype
+Sat Jul 12 12:27:06 UTC 2025 - Ran pytest after adding item system
+Sat Jul 12 12:27:09 UTC 2025 - Marked Ticket 4 as Coded
+Sat Jul 12 12:27:11 UTC 2025 - Marked Ticket 4 as Tested
+Sat Jul 12 12:27:33 UTC 2025 - Updated README and item docs
+Sat Jul 12 12:27:34 UTC 2025 - Marked Ticket 4 as Reviewed and Documented
