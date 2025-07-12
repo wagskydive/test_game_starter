@@ -133,11 +133,11 @@
 - Document UI setup in `docs/ui.md`.
 
 ## Ticket 13 - NPC Pathfinding Prototype
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 - Implement simple A* pathfinding in `src/pathfinding.py` for NPC movement.
 - Integrate pathfinding into `NPC.move` when a path is required.
 - Add tests in `tests/test_pathfinding.py` for path generation and obstacles.

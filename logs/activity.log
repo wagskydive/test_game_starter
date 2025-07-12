@@ -48,3 +48,8 @@ Sat Jul 12 12:50:34 UTC 2025 - Installed dependencies and ran pytest successfull
 Sat Jul 12 12:55:09 UTC 2025 - Installed requirements for tests
 Sat Jul 12 12:55:10 UTC 2025 - Ran baseline pytest
 Sat Jul 12 12:55:11 UTC 2025 - Created new tickets 9-13
+Sat Jul 12 13:02:47 UTC 2025 - Starting Ticket 13: NPC pathfinding
+Sat Jul 12 13:04:45 UTC 2025 - Added A* pathfinding module, tests, docs
+Sat Jul 12 13:04:47 UTC 2025 - Updated NPC.move to use pathfinding
+Sat Jul 12 13:05:24 UTC 2025 - All tests pass for pathfinding
+Sat Jul 12 13:05:26 UTC 2025 - Documented pathfinding

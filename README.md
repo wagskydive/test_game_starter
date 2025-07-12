@@ -59,3 +59,8 @@ The `player` module provides a `Player` class that inherits from `NPC` and inclu
 ### Crafting Prototype
 
 The `crafting` module defines simple recipes and a `craft` function to combine items in an inventory. See [docs/crafting.md](docs/crafting.md) for usage.
+
+### Pathfinding Prototype
+
+The `pathfinding` module provides simple A* search used by `NPC.move` when a
+target is supplied. See [docs/pathfinding.md](docs/pathfinding.md) for details.
