@@ -59,3 +59,9 @@ The `player` module provides a `Player` class that inherits from `NPC` and inclu
 ### Crafting Prototype
 
 The `crafting` module defines simple recipes and a `craft` function to combine items in an inventory. See [docs/crafting.md](docs/crafting.md) for usage.
+
+### User Interface
+
+A minimal Godot project is stored under the `godot/` directory. It contains a
+main menu and inventory screen layout used for UI prototyping. See
+[docs/ui.md](docs/ui.md) for details on opening the project and manual testing.

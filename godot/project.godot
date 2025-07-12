@@ -1,0 +1,9 @@
+; Engine configuration file.
+; Written with Godot 4.
+
+[application]
+config/name="After the Fall"
+run/main_scene="res://scenes/MainMenu.tscn"
+
+[rendering]
+quality/driver/driver_name="GLES3"

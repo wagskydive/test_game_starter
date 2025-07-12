@@ -48,3 +48,9 @@ Sat Jul 12 12:50:34 UTC 2025 - Installed dependencies and ran pytest successfull
 Sat Jul 12 12:55:09 UTC 2025 - Installed requirements for tests
 Sat Jul 12 12:55:10 UTC 2025 - Ran baseline pytest
 Sat Jul 12 12:55:11 UTC 2025 - Created new tickets 9-13
+Sat Jul 12 13:01:52 UTC 2025 - Starting Ticket 12: Basic UI Setup
+Sat Jul 12 13:01:59 UTC 2025 - Marked Ticket 12 as Started
+Sat Jul 12 13:02:27 UTC 2025 - Added Godot UI scenes and documentation
+Sat Jul 12 13:02:48 UTC 2025 - Installed requirements and ran pytest for Ticket 12
+Sat Jul 12 13:02:52 UTC 2025 - Marked Ticket 12 as Coded and Tested
+Sat Jul 12 13:02:57 UTC 2025 - Marked Ticket 12 as Reviewed
