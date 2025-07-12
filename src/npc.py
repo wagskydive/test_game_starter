@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, Set, Tuple
 
 from game_map import GameMap
 
@@ -18,8 +18,28 @@ class NPC:
         self.hunger = max(0, self.hunger - hunger_rate)
         self.thirst = max(0, self.thirst - thirst_rate)
 
-    def move(self, dx: int, dy: int, game_map: Optional[GameMap] = None) -> None:
-        """Move the NPC by the given delta, respecting map bounds if provided."""
+    def move(
+        self,
+        dx: int = 0,
+        dy: int = 0,
+        game_map: Optional[GameMap] = None,
+        target: Optional[Tuple[int, int]] = None,
+        obstacles: Optional[Set[Tuple[int, int]]] = None,
+    ) -> None:
+        """Move the NPC either by delta or toward a target using pathfinding."""
+        if target is not None:
+            if game_map is None:
+                raise ValueError("game_map required for pathfinding")
+            from pathfinding import find_path
+
+            path = find_path((self.x, self.y), target, game_map, obstacles)
+            if len(path) > 1:
+                next_x, next_y = path[1]
+                dx = next_x - self.x
+                dy = next_y - self.y
+            else:
+                dx = dy = 0
+
         new_x = self.x + dx
         new_y = self.y + dy
         if game_map is None or game_map.in_bounds(new_x, new_y):
