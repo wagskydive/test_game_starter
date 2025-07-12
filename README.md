@@ -97,12 +97,17 @@ See [docs/combat.md](docs/combat.md) for usage.
 `NPC` now includes additional needs and personality traits. See
 [docs/npc_needs.md](docs/npc_needs.md) and
 [docs/npc_personality.md](docs/npc_personality.md).
+`animation_state` tracks simple animations such as walking or sitting.
+See [docs/npc_animation.md](docs/npc_animation.md).
 
 ### AI Behaviors and Story Anchors
 
 Basic behavior selection is provided in `ai_behavior` and simple story anchors
 are implemented in `story_anchors`. See [docs/ai_behavior.md](docs/ai_behavior.md)
 and [docs/story_anchors.md](docs/story_anchors.md).
+Anchors can run an `on_trigger` callback when activated.
+Use `generate_quest` from `procedural_quests` for simple quest generation when
+no LLM is available. See [docs/procedural_quests.md](docs/procedural_quests.md).
 
 ### Modding and Assets
 
@@ -113,9 +118,12 @@ The helper in `asset_manager.ensure_assets` downloads Kenney asset packs (enviro
 `character_sprites.generate_character` builds a basic appearance by selecting
 sprite layers from the indexed `roguelike-characters` pack. See
 [docs/character_sprites.md](docs/character_sprites.md).
+The placeholder asset generator uses a simple color palette defined in
+`palette` to create layered sprites. See [docs/art_palette.md](docs/art_palette.md).
 `tile_mapping.load_tile_map` resolves tiles from the world generator to sprite files
 in the Tiny Town pack. See [docs/map_tileset.md](docs/map_tileset.md).
-See [docs/ui.md](docs/ui.md) for the basic UI setup.
+See [docs/ui.md](docs/ui.md) for the UI setup including themed menus,
+character stats and crafting screens.
 
 ### LLM Integration
 

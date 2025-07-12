@@ -1,7 +1,9 @@
 # Asset Pipeline
 
 Run `python scripts/generate_assets.py` to create placeholder sprites in
-`assets/generated`. Replace these with real art as it becomes available.
+`assets/generated`. The script uses the color palette defined in
+`palette` and produces layered character images. Replace these with real art as
+it becomes available.
 
 ## Runtime Asset Downloads
 

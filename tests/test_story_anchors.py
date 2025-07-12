@@ -21,3 +21,16 @@ def test_anchor_triggers_when_condition_met():
     assert called
     assert anchor in triggered
     assert anchor.triggered is True
+
+
+def test_anchor_calls_on_trigger():
+    es = EventSystem()
+    events = []
+
+    def on_trigger(a):
+        events.append(a.name)
+
+    anchor = StoryAnchor('event', on_trigger=on_trigger)
+    es.add_anchor(anchor)
+    es.tick()
+    assert events == ['event']
