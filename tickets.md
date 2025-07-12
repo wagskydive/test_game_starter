@@ -1,6 +1,306 @@
 # Tickets
 
-## Ticket 1 - Project Setup
+## Ticket 1 - Godot Project Skeleton
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Add a basic Godot project with scenes and integrate Python modules.
+
+## Ticket 2 - Port Python Modules to GDScript
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Reimplement existing Python systems in GDScript or provide GDExtension bindings.
+
+## Ticket 3 - Integrate Game Systems in Godot
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Hook up world generation, NPC, item and crafting logic inside Godot scenes.
+
+## Ticket 4 - Godot Test Setup
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Configure automated tests using Godot's testing framework.
+
+## Ticket 5 - Build and Install Guide
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Provide instructions to build the Godot project and install dependencies.
+
+## Ticket 6 - Basic UI Setup
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Establish initial UI scene in Godot with placeholder buttons and panels.
+Include a simple main menu and inventory screen layout.
+Add tests using Godot's test framework if possible or provide manual steps.
+Document UI setup in `docs/ui.md`.
+
+## Ticket 7 - Runtime Asset Download
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Download required Kenney asset packs automatically at runtime if missing.
+
+## Ticket 8 - Environment Asset Pack
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Integrate Tiny Town tileset into the project.
+
+## Ticket 9 - Character Asset Pack
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Integrate Roguelike Characters sprites into the project.
+
+## Ticket 10 - Character System Using Assets
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Create a system for characters using the downloaded sprite layers.
+
+## Ticket 11 - Map Tileset Integration
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Map the Tiny Town tileset to the procedural map generator.
+
+## Ticket 12 - Art Palette and Layered Sprites
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Define a common color palette and layered sprite format.
+Update asset pipeline to generate placeholder layers.
+
+## Ticket 13 - NPC Animation States
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Implement animations for idle, walk, angry, excited and sitting.
+
+## Ticket 14 - UI Style Pass and New Screens
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Apply consistent styling to menus and inventory.
+Add screens for character stats and crafting.
+
+## Ticket 15 - Procedural Quest Generator
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Generate quests procedurally when no LLM is available.
+
+## Ticket 16 - Expanded Event System
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Extend the event framework to support complex story triggers.
+
+## Ticket 17 - Faction Goals and Group AI
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Give factions group objectives and simple coordination logic.
+
+## Ticket 18 - Offline LLM Integration
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Support running an offline model via the Godot-LLM plugin.
+
+## Ticket 19 - Weather and Seasons Simulation
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Simulate weather patterns and seasonal effects on temperature.
+
+## Ticket 20 - Trading and Economy System
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Implement a currency and trading mechanics with NPCs.
+
+## Ticket 21 - NPC Families and Relationships
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Track familial ties and friendships between NPCs.
+
+## Ticket 22 - Nested Containers and Volume
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Support containers within containers and volume-based limits.
+
+## Ticket 23 - NPC Health Extensions
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Add temperature, wound and disease tracking to `NPC`.
+Include healing mechanics and tests for damage over time.
+
+## Ticket 24 - Social Status and Impressiveness
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Implement `impressiveness` stat affecting NPC reactions.
+Track social status changes through actions and items.
+
+## Ticket 25 - Crafting Stations
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Add station classes such as `Anvil`, `Firepit`, `Loom`, and `Kiln`.
+Require appropriate station for certain recipes.
+
+## Ticket 26 - Blueprints and Skill Requirements
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Introduce blueprint items and crafting skill levels.
+Some recipes require blueprints or high skill to craft.
+
+## Ticket 27 - Reinforcement Learning NPCs
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Prototype RL-based training for selected NPC behaviors.
+
+## Ticket 28 - Advanced Pathfinding
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Add avoidance and dynamic obstacle handling to pathfinding.
+
+## Ticket 29 - NPC Daily Schedules
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Give NPCs schedules for work, rest and social activities.
+
+## Ticket 30 - Day/Night Cycle and Energy
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Implement a day/night cycle and energy stat affecting actions.
+
+## Ticket 31 - Documentation Diagrams
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Provide flowcharts for worldgen, crafting, and story anchors.
+
+## Ticket 32 - Settlements and Ruins Generation
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Extend `worldgen` with placement of villages, castles, ruins and trade posts.
+Include special "megalith" tiles that are mostly indestructible.
+Write tests ensuring settlements appear when a seed is used.
+Document in `docs/worldgen_settlements.md`.
+
+## Ticket 33 - Destructible Tiles and Grouping
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Add support for marking tiles as destructible or permanent.
+Implement grouping of tiles into structures (houses, mountains, ships).
+Update tests to cover new attributes and grouping behavior.
+Document in `docs/tile_groups.md`.
+
+## Ticket 34 - Expanded Item Definitions
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Move item and recipe data to JSON files loaded at runtime.
+Include base and intermediate materials from the design document.
+Add fields for quality, rarity and impressiveness.
+Document format in `docs/items_json.md`.
+
+## Ticket 35 - Equipment Slots
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Extend `Item` and `Inventory` to handle equip slots (hand, head, torso, feet, etc.).
+Provide tests for equipping and unequipping items.
+Document in `docs/equipment.md`.
+
+## Ticket 36 - Project Setup
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -12,7 +312,7 @@
   - installs dependencies and adds them to `requirements.txt`
 - Run the project-setup.bat script
 
-## Ticket 2 - Update Agents Instructions
+## Ticket 37 - Update Agents Instructions
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -20,7 +320,7 @@
 - [x] Documented
 - Review the design document and expand `AGENTS.md` with detailed project guidelines and iterative workflow instructions.
 
-## Ticket 3 - Basic World Generator Prototype
+## Ticket 38 - Basic World Generator Prototype
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -29,8 +329,7 @@
 - Create a Python module `src/worldgen.py` that generates a 2D tile map using Perlin noise.
 - Add unit tests under `tests/test_worldgen.py` to validate map dimensions and deterministic output when a seed is provided.
 
-
-## Ticket 4 - Item and Inventory Prototype
+## Ticket 39 - Item and Inventory Prototype
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -41,7 +340,7 @@
 - Write unit tests in `tests/test_item.py` for item creation and inventory management.
 - Document usage in `docs/item.md`.
 
-## Ticket 5 - Basic NPC Class
+## Ticket 40 - Basic NPC Class
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -52,7 +351,7 @@
 - Write tests in `tests/test_npc.py` for initialization and hunger/thirst reduction.
 - Document usage in `docs/npc.md`.
 
-## Ticket 6 - Player Class With Inventory
+## Ticket 41 - Player Class With Inventory
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -63,7 +362,7 @@
 - Create tests in `tests/test_player.py` for inventory interaction and default stats.
 - Document usage in `docs/player.md`.
 
-## Ticket 7 - Basic Map and Movement
+## Ticket 42 - Basic Map and Movement
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -74,8 +373,7 @@
 - Write tests for movement and map bounds.
 - Document map and movement usage.
 
-## Ticket 8 - Basic Crafting System
-
+## Ticket 43 - Basic Crafting System
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -85,7 +383,7 @@
 - Add tests in `tests/test_crafting.py` for crafting success and failure when materials are missing.
 - Document usage in `docs/crafting.md` and update `README.md`.
 
-## Ticket 9 - Save and Load System
+## Ticket 44 - Save and Load System
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -96,8 +394,7 @@
 - Add tests in `tests/test_save_load.py` to verify round-trip integrity.
 - Document usage in `docs/save_load.md`.
 
-
-## Ticket 10 - CLI Seed Input
+## Ticket 45 - CLI Seed Input
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -108,8 +405,7 @@
 - Write tests in `tests/test_cli_seed.py` for argument handling.
 - Document usage in `docs/cli_seed.md`.
 
-
-## Ticket 11 - Logging Utility
+## Ticket 46 - Logging Utility
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -120,19 +416,7 @@
 - Write tests in `tests/test_logging_util.py` for log creation and formatting.
 - Document usage in `docs/logging_util.md`.
 
-
-## Ticket 12 - Basic UI Setup
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Establish initial UI scene in Godot with placeholder buttons and panels.
-- Include a simple main menu and inventory screen layout.
-- Add tests using Godot's test framework if possible or provide manual steps.
-- Document UI setup in `docs/ui.md`.
-
-## Ticket 13 - NPC Pathfinding Prototype
+## Ticket 47 - NPC Pathfinding Prototype
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -142,50 +426,8 @@
 - Integrate pathfinding into `NPC.move` when a path is required.
 - Add tests in `tests/test_pathfinding.py` for path generation and obstacles.
 - Document in `docs/pathfinding.md`.
-## Ticket 14 - Settlements and Ruins Generation
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Extend `worldgen` with placement of villages, castles, ruins and trade posts.
-- Include special "megalith" tiles that are mostly indestructible.
-- Write tests ensuring settlements appear when a seed is used.
-- Document in `docs/worldgen_settlements.md`.
 
-## Ticket 15 - Destructible Tiles and Grouping
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Add support for marking tiles as destructible or permanent.
-- Implement grouping of tiles into structures (houses, mountains, ships).
-- Update tests to cover new attributes and grouping behavior.
-- Document in `docs/tile_groups.md`.
-
-## Ticket 16 - Expanded Item Definitions
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Move item and recipe data to JSON files loaded at runtime.
-- Include base and intermediate materials from the design document.
-- Add fields for quality, rarity and impressiveness.
-- Document format in `docs/items_json.md`.
-
-## Ticket 17 - Equipment Slots
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Extend `Item` and `Inventory` to handle equip slots (hand, head, torso, feet, etc.).
-- Provide tests for equipping and unequipping items.
-- Document in `docs/equipment.md`.
-
-## Ticket 18 - Basic Combat System
+## Ticket 48 - Basic Combat System
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -196,7 +438,7 @@
 - Add unit tests for combat calculations.
 - Document usage in `docs/combat.md`.
 
-## Ticket 19 - NPC Needs System
+## Ticket 49 - NPC Needs System
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -207,7 +449,7 @@
 - Add tests verifying needs update over time.
 - Document in `docs/npc_needs.md`.
 
-## Ticket 20 - NPC Personalities and Factions
+## Ticket 50 - NPC Personalities and Factions
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -218,7 +460,7 @@
 - Provide tests for trait assignment and group storage.
 - Document in `docs/npc_personality.md`.
 
-## Ticket 21 - Basic AI Behaviors
+## Ticket 51 - Basic AI Behaviors
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -229,7 +471,7 @@
 - Add unit tests for behavior selection logic.
 - Document in `docs/ai_behavior.md`.
 
-## Ticket 22 - Story Anchor Framework
+## Ticket 52 - Story Anchor Framework
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -240,7 +482,7 @@
 - Write tests for anchor activation logic.
 - Document in `docs/story_anchors.md`.
 
-## Ticket 23 - LLM Storytelling Integration
+## Ticket 53 - LLM Storytelling Integration
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -251,7 +493,7 @@
 - Add basic unit tests with mocked responses.
 - Document setup in `docs/llm_integration.md`.
 
-## Ticket 24 - Expanded Save/Load
+## Ticket 54 - Expanded Save/Load
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -262,7 +504,7 @@
 - Write tests for the new data fields.
 - Update documentation in `docs/save_load.md`.
 
-## Ticket 25 - UI Inventory and Menu Screens
+## Ticket 55 - UI Inventory and Menu Screens
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -273,7 +515,7 @@
 - Provide manual test steps until automated UI tests are in place.
 - Document in `docs/ui_inventory.md`.
 
-## Ticket 26 - Asset Pipeline Setup
+## Ticket 56 - Asset Pipeline Setup
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -283,7 +525,7 @@
 - Organize assets under an `assets/` directory with subfolders for tiles and characters.
 - Document the asset workflow in `docs/assets.md`.
 
-## Ticket 27 - Modding Support Basics
+## Ticket 57 - Modding Support Basics
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -294,7 +536,7 @@
 - Add tests for mod discovery and parsing.
 - Document usage in `docs/modding.md`.
 
-## Ticket 28 - Advanced Logging Options
+## Ticket 58 - Advanced Logging Options
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -305,174 +547,7 @@
 - Add tests covering new logging features.
 - Update documentation in `docs/logging_util.md`.
 
-## Ticket 29 - NPC Health Extensions
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Add temperature, wound and disease tracking to `NPC`.
-- Include healing mechanics and tests for damage over time.
-
-## Ticket 30 - Social Status and Impressiveness
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Implement `impressiveness` stat affecting NPC reactions.
-- Track social status changes through actions and items.
-
-## Ticket 31 - Crafting Stations
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Add station classes such as `Anvil`, `Firepit`, `Loom`, and `Kiln`.
-- Require appropriate station for certain recipes.
-
-## Ticket 32 - Blueprints and Skill Requirements
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Introduce blueprint items and crafting skill levels.
-- Some recipes require blueprints or high skill to craft.
-
-## Ticket 33 - Reinforcement Learning NPCs
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Prototype RL-based training for selected NPC behaviors.
-
-## Ticket 34 - Faction Goals and Group AI
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Give factions group objectives and simple coordination logic.
-
-## Ticket 35 - Offline LLM Integration
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Support running an offline model via the Godot-LLM plugin.
-
-## Ticket 36 - Procedural Quest Generator
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Generate quests procedurally when no LLM is available.
-
-## Ticket 37 - Godot Project Skeleton
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Add a basic Godot project with scenes and integrate Python modules.
-
-## Ticket 38 - NPC Animation States
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Implement animations for idle, walk, angry, excited and sitting.
-
-## Ticket 39 - Art Palette and Layered Sprites
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Define a common color palette and layered sprite format.
-- Update asset pipeline to generate placeholder layers.
-
-## Ticket 40 - UI Style Pass and New Screens
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Apply consistent styling to menus and inventory.
-- Add screens for character stats and crafting.
-
-## Ticket 41 - Weather and Seasons Simulation
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Simulate weather patterns and seasonal effects on temperature.
-
-## Ticket 42 - Trading and Economy System
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Implement a currency and trading mechanics with NPCs.
-
-## Ticket 43 - NPC Families and Relationships
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Track familial ties and friendships between NPCs.
-
-## Ticket 44 - Advanced Pathfinding
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Add avoidance and dynamic obstacle handling to pathfinding.
-
-## Ticket 45 - Nested Containers and Volume
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Support containers within containers and volume-based limits.
-
-## Ticket 46 - Documentation Diagrams
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Provide flowcharts for worldgen, crafting, and story anchors.
-
-## Ticket 47 - NPC Daily Schedules
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Give NPCs schedules for work, rest and social activities.
-
-## Ticket 48 - Day/Night Cycle and Energy
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
-- Implement a day/night cycle and energy stat affecting actions.
-
-
-## Ticket 49 - Planning Document
+## Ticket 59 - Planning Document
 - [x] Started
 - [x] Coded
 - [x] Tested
@@ -480,7 +555,7 @@
 - [x] Documented
 - Create planning.md summarizing completed features and future milestones.
 
-## Ticket 50 - Wave Function Collapse Generator
+## Ticket 60 - Wave Function Collapse Generator
 - [x] Started
 - [x] Coded
 - [x] Tested
