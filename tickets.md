@@ -186,11 +186,11 @@
 - Document in `docs/equipment.md`.
 
 ## Ticket 18 - Basic Combat System
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 - Create combat functions for melee and ranged attacks using item stats.
 - Track health reduction and simple hit chance.
 - Add unit tests for combat calculations.
