@@ -136,7 +136,7 @@ Extend the event framework to support complex story triggers.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Give factions group objectives and simple coordination logic.
 
@@ -144,16 +144,16 @@ Give factions group objectives and simple coordination logic.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Support running an offline model via the Godot-LLM plugin.
 
 ## Ticket 19 - Weather and Seasons Simulation
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Simulate weather patterns and seasonal effects on temperature.
 
 ## Ticket 20 - Trading and Economy System
@@ -569,3 +569,10 @@ Document in `docs/equipment.md`.
 - [x] Reviewed
 - [x] Documented
 Add the Kenney UI Pack RPG Expansion as a runtime-downloadable asset. Index its file list in the asset database.
+## Ticket 62 - Weather Effects on NPCs
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+Modify NPC.tick to consider weather temperature when adjusting NPC temperature.
