@@ -21,5 +21,6 @@ In addition to the role described by the ticket, you act as a creative critical 
    - Update documentation under `docs/` and `README.md` where appropriate.
    - Record significant actions in `logs/activity.log`.
    - Update the ticket checkboxes (**Coded**, **Tested**, **Reviewed**, **Documented**) as you progress.
-5. When a ticket is complete, open a pull request referencing it. Include a summary of the log and any recommendations for future work.
-6. Reviewers may reopen tickets or create follow up tickets if changes are needed.
+5. When a ticket is complete, create new tickets where you see fit.
+6. Open a pull request referencing it the completed ticket. Include a summary of the log and any recommendations for future work.
+7. Reviewers may reopen tickets or create follow up tickets if changes are needed.
