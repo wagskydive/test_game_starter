@@ -11,31 +11,33 @@ except ImportError:  # in case requests isn't installed when imported
 
 
 # Directories can be overridden for tests via environment variables
-ASSET_DIR = os.path.join(os.path.dirname(__file__), '..', 'assets')
-ASSET_DB = os.environ.get('ASSET_DB', os.path.join(ASSET_DIR, 'asset_index.json'))
-TEMP_DIR = os.environ.get('ASSET_TEMP', os.path.join(ASSET_DIR, 'temp'))
+ASSET_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
+ASSET_DB = os.environ.get(
+    "ASSET_DB", os.path.join(ASSET_DIR, "asset_index.json")
+)
+TEMP_DIR = os.environ.get("ASSET_TEMP", os.path.join(ASSET_DIR, "temp"))
 
 # Default Kenney asset packs used by the project. These URLs are indexed at
 # runtime using :func:`ensure_assets`. They can be overridden in tests by
 # monkeypatching this dictionary.
 DEFAULT_ASSETS = {
-    'tiny-town': 'https://kenney.nl/media/pages/assets/tiny-town/5e46f9e551-1735736916/kenney_tiny-town.zip',
-    'roguelike-characters': 'https://kenney.nl/media/pages/assets/roguelike-characters/dbeea49dc8-1729196490/kenney_roguelike-characters.zip',
-    'ui-pack-rpg-expansion': 'https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/885ad5ccc0-1677661824/kenney_ui-pack-rpg-expansion.zip',
+    "tiny-town": "https://kenney.nl/media/pages/assets/tiny-town/5e46f9e551-1735736916/kenney_tiny-town.zip",
+    "roguelike-characters": "https://kenney.nl/media/pages/assets/roguelike-characters/dbeea49dc8-1729196490/kenney_roguelike-characters.zip",
+    "ui-pack-rpg-expansion": "https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/885ad5ccc0-1677661824/kenney_ui-pack-rpg-expansion.zip",
 }
 
 
 def _download(url: str, dest: str) -> None:
     parsed = urlparse(url)
     os.makedirs(os.path.dirname(dest), exist_ok=True)
-    if parsed.scheme == 'file':
+    if parsed.scheme == "file":
         shutil.copyfile(parsed.path, dest)
     else:
         if requests is None:
-            raise RuntimeError('requests is required to download assets')
+            raise RuntimeError("requests is required to download assets")
         response = requests.get(url, stream=True)
         response.raise_for_status()
-        with open(dest, 'wb') as f:
+        with open(dest, "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):
                 f.write(chunk)
 
@@ -44,19 +46,19 @@ def download_and_index(name: str, url: str) -> None:
     """Download a zip file, record its contents to the asset DB, then delete."""
     os.makedirs(TEMP_DIR, exist_ok=True)
     os.makedirs(os.path.dirname(ASSET_DB), exist_ok=True)
-    zip_path = os.path.join(TEMP_DIR, f'{name}.zip')
+    zip_path = os.path.join(TEMP_DIR, f"{name}.zip")
     _download(url, zip_path)
 
-    with zipfile.ZipFile(zip_path, 'r') as zf:
+    with zipfile.ZipFile(zip_path, "r") as zf:
         files = [info.filename for info in zf.infolist()]
 
     if os.path.exists(ASSET_DB):
-        with open(ASSET_DB, 'r') as f:
+        with open(ASSET_DB, "r") as f:
             data = json.load(f)
     else:
         data = {}
     data[name] = files
-    with open(ASSET_DB, 'w') as f:
+    with open(ASSET_DB, "w") as f:
         json.dump(data, f, indent=2)
 
     os.remove(zip_path)
@@ -66,7 +68,7 @@ def ensure_assets(assets: dict) -> None:
     """Ensure each asset pack is indexed. assets is {name: url}."""
     existing = {}
     if os.path.exists(ASSET_DB):
-        with open(ASSET_DB, 'r') as f:
+        with open(ASSET_DB, "r") as f:
             existing = json.load(f)
 
     for name, url in assets.items():

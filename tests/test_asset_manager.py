@@ -1,9 +1,11 @@
+import json
 import os
 import sys
-import json
 import zipfile
 
-sys.path.insert(0, os.path.abspath('src'))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.asset_manager import download_and_index, ensure_assets, DEFAULT_ASSETS
 
 
 def test_download_and_index_local_zip(tmp_path, monkeypatch):
@@ -14,7 +16,9 @@ def test_download_and_index_local_zip(tmp_path, monkeypatch):
     monkeypatch.setenv('ASSET_TEMP', str(temp_dir))
 
     # Import after env vars so paths are updated
-    from asset_manager import download_and_index
+    from importlib import reload
+    from src import asset_manager as am
+    am = reload(am)
 
     # Create a small zip file to act as the download
     zip_file = tmp_path / 'pack.zip'
@@ -22,7 +26,7 @@ def test_download_and_index_local_zip(tmp_path, monkeypatch):
         zf.writestr('file1.png', 'data')
         zf.writestr('folder/file2.png', 'more')
 
-    download_and_index('testpack', f'file://{zip_file}')
+    am.download_and_index('testpack', f'file://{zip_file}')
 
     dest_zip = temp_dir / 'testpack.zip'
     assert not dest_zip.exists()
@@ -40,9 +44,9 @@ def test_ensure_assets_multiple(tmp_path, monkeypatch):
     monkeypatch.setenv('ASSET_DB', str(db_path))
     monkeypatch.setenv('ASSET_TEMP', str(temp_dir))
 
-    import importlib
-    import asset_manager
-    asset_manager = importlib.reload(asset_manager)
+    from importlib import reload
+    from src import asset_manager
+    asset_manager = reload(asset_manager)
 
     zip1 = tmp_path / 'ui.zip'
     with zipfile.ZipFile(zip1, 'w') as zf:
@@ -71,7 +75,7 @@ def test_ensure_assets_multiple(tmp_path, monkeypatch):
 
 
 def test_default_assets_keys():
-    import asset_manager
+    from src import asset_manager
     keys = set(asset_manager.DEFAULT_ASSETS.keys())
     assert keys == {
         'tiny-town',

@@ -1,9 +1,11 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
+import os
+import sys
 
-from game_map import GameMap
-from worldgen import generate_map
-from npc import NPC
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.game_map import GameMap
+from src.worldgen import generate_map
+from src.npc import NPC
 
 
 def test_get_tile_in_bounds():

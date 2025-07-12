@@ -5,10 +5,10 @@ from __future__ import annotations
 import json
 from typing import List, Tuple, Dict, Any, Optional
 
-from player import Player
-from npc import NPC
-from item import Item
-from game_map import GameMap
+from .player import Player
+from .npc import NPC
+from .item import Item
+from .game_map import GameMap
 
 
 def _item_to_dict(item: Item) -> dict:
@@ -105,4 +105,3 @@ def load_game(path: str) -> Tuple[Player, List[NPC], GameMap, Dict[str, Any]]:
 
     story_state = data.get("story_state", {})
     return player, npcs, game_map, story_state
-

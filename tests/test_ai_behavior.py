@@ -1,8 +1,10 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
+import os
+import sys
 
-from npc import NPC
-from ai_behavior import select_behavior, Behavior
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.npc import NPC
+from src.ai_behavior import select_behavior, Behavior
 
 
 def test_select_behavior_based_on_needs():

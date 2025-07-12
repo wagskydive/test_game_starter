@@ -1,5 +1,5 @@
 import argparse
-from worldgen import generate_map
+from .worldgen import generate_map
 
 
 def parse_args(args=None):

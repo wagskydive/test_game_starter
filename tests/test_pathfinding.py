@@ -1,8 +1,10 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
+import os
+import sys
 
-from game_map import GameMap
-from pathfinding import find_path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.game_map import GameMap
+from src.pathfinding import find_path
 
 
 def make_map(width, height):

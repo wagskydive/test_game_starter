@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 from typing import Dict, Optional
 
-from item import Item, Inventory
+from .item import Item, Inventory
+
 
 @dataclass
 class Recipe:

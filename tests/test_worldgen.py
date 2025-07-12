@@ -1,7 +1,9 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath('src'))
-from worldgen import generate_map
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.worldgen import generate_map
 
 
 def test_map_dimensions():
@@ -18,7 +20,7 @@ def test_map_deterministic_seed():
 
 def test_map_respects_adjacency():
     m = generate_map(5, 5, seed=1)
-    from worldgen import ADJACENCY
+    from src.worldgen import ADJACENCY
 
     height = len(m)
     width = len(m[0])

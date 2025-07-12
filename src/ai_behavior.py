@@ -3,8 +3,9 @@ from enum import Enum
 from random import choice
 from typing import Optional
 
-from npc import NPC
-from game_map import GameMap
+from .npc import NPC
+from .game_map import GameMap
+
 
 class Behavior(Enum):
     IDLE = "idle"
@@ -22,7 +23,9 @@ def select_behavior(npc: NPC) -> Behavior:
     return Behavior.IDLE
 
 
-def perform_behavior(npc: NPC, behavior: Behavior, game_map: Optional[GameMap] = None) -> None:
+def perform_behavior(
+    npc: NPC, behavior: Behavior, game_map: Optional[GameMap] = None
+) -> None:
     """Execute one tick of the behavior."""
     if behavior == Behavior.WANDER:
         npc.move(choice([-1, 0, 1]), choice([-1, 0, 1]), game_map)

@@ -1,9 +1,11 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
+import os
+import sys
 
-from item import Item
-from npc import NPC
-import combat
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.item import Item
+from src.npc import NPC
+from src import combat
 
 
 def test_melee_attack_hits(monkeypatch):

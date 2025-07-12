@@ -1,9 +1,10 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath('src'))
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import pytest
-from item import Item, Inventory
+from src.item import Item, Inventory
 
 
 def test_item_defaults():

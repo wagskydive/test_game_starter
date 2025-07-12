@@ -1,11 +1,13 @@
 from dataclasses import dataclass, field
 from typing import Optional, Set, Tuple, List
 
-from game_map import GameMap
+from .game_map import GameMap
+
 
 @dataclass
 class NPC:
     """Basic non-player character with simple needs."""
+
     name: str
     health: int = 100
     hunger: int = 100
@@ -47,7 +49,9 @@ class NPC:
         if self.diseases:
             self.health = max(0, self.health - len(self.diseases))
 
-    def satisfy(self, rest: int = 0, safety: int = 0, social: int = 0, status: int = 0) -> None:
+    def satisfy(
+        self, rest: int = 0, safety: int = 0, social: int = 0, status: int = 0
+    ) -> None:
         """Increase needs scores without exceeding 100."""
         self.rest = min(100, self.rest + rest)
         self.safety = min(100, self.safety + safety)
@@ -99,7 +103,7 @@ class NPC:
         if target is not None:
             if game_map is None:
                 raise ValueError("game_map required for pathfinding")
-            from pathfinding import find_path
+            from .pathfinding import find_path
 
             path = find_path((self.x, self.y), target, game_map, obstacles)
             if len(path) > 1:

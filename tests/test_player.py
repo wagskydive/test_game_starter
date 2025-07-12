@@ -1,7 +1,10 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
-from player import Player
-from item import Item
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.player import Player
+from src.item import Item
 
 
 def test_player_defaults():

@@ -1,7 +1,9 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
+import os
+import sys
 
-from story_anchors import StoryAnchor, EventSystem
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.story_anchors import StoryAnchor, EventSystem
 
 
 def test_anchor_triggers_when_condition_met():
