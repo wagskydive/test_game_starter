@@ -55,3 +55,7 @@ See [docs/map.md](docs/map.md) for details.
 ### Player Prototype
 
 The `player` module provides a `Player` class that inherits from `NPC` and includes an `Inventory`. See [docs/player.md](docs/player.md) for usage.
+
+### Crafting Prototype
+
+The `crafting` module defines simple recipes and a `craft` function to combine items in an inventory. See [docs/crafting.md](docs/crafting.md) for usage.
