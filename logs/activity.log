@@ -38,3 +38,7 @@ Sat Jul 12 12:35:40 UTC 2025 - Implemented Player class and tests
 Sat Jul 12 12:35:58 UTC 2025 - Ran pytest after Player addition
 Sat Jul 12 12:36:00 UTC 2025 - Documented Player usage
 Sat Jul 12 12:36:06 UTC 2025 - Marked Ticket 6 as Reviewed
+Sat Jul 12 12:42:01 UTC 2025 - Starting Ticket 7: Basic Map and Movement
+Sat Jul 12 12:43:02 UTC 2025 - Implemented map module, NPC movement, tests and docs
+Sat Jul 12 12:43:03 UTC 2025 - Ran pytest for Ticket 7
+Sat Jul 12 12:43:11 UTC 2025 - Marked Ticket 7 as Reviewed and Documented

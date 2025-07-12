@@ -62,3 +62,14 @@
 - Add a `pick_up` method to move an `Item` into the inventory.
 - Create tests in `tests/test_player.py` for inventory interaction and default stats.
 - Document usage in `docs/player.md`.
+
+## Ticket 7 - Basic Map and Movement
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+- Add `game_map` module to encapsulate map data with `get_tile` method.
+- Extend `NPC` with `x` and `y` coordinates and a `move` method optionally bounded by a map.
+- Write tests for movement and map bounds.
+- Document map and movement usage.

@@ -1,0 +1,36 @@
+import os, sys
+sys.path.insert(0, os.path.abspath('src'))
+
+from game_map import GameMap
+from worldgen import generate_map
+from npc import NPC
+
+
+def test_get_tile_in_bounds():
+    data = generate_map(3, 3, seed=1)
+    m = GameMap(3, 3, data)
+    assert m.get_tile(0, 0) in {'water', 'plains', 'forest', 'hills', 'mountains'}
+
+
+def test_get_tile_out_of_bounds():
+    data = generate_map(3, 3, seed=1)
+    m = GameMap(3, 3, data)
+    assert m.get_tile(-1, 0) is None
+    assert m.get_tile(3, 3) is None
+
+
+def test_npc_move_within_bounds():
+    data = generate_map(5, 5, seed=1)
+    m = GameMap(5, 5, data)
+    n = NPC(name='Bob')
+    n.move(1, 1, m)
+    assert (n.x, n.y) == (1, 1)
+
+
+def test_npc_move_blocked_by_bounds():
+    data = generate_map(5, 5, seed=1)
+    m = GameMap(5, 5, data)
+    n = NPC(name='Bob')
+    n.move(-1, 0, m)
+    assert (n.x, n.y) == (0, 0)
+
