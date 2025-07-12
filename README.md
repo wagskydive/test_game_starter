@@ -134,9 +134,13 @@ details.
 
 ### Modding and Assets
 
-Mods can be placed under `mods/` and loaded using `modding.discover_mods`. Run
-`scripts/generate_assets.py` to create placeholder assets. See
-The helper in `asset_manager.ensure_assets` downloads Kenney asset packs (environment, characters and UI) at runtime and saves only their file names in `assets/asset_index.json`. Use `asset_manager.DEFAULT_ASSETS` for the default pack URLs.
+Mods can be placed under `mods/` and loaded using `modding.discover_mods`.
+Run `scripts/generate_assets.py` to create placeholder assets.
+Run `scripts/download_assets.py` to fetch the default Kenney packs and index
+their contents. The helper in `asset_manager.ensure_assets` is used by the
+script and downloads the packs (environment, characters and UI) at runtime,
+saving only their file names in `assets/asset_index.json`.
+Use `asset_manager.DEFAULT_ASSETS` for the default pack URLs.
 [docs/modding.md](docs/modding.md) and [docs/assets.md](docs/assets.md).
 `character_sprites.generate_character` builds a basic appearance by selecting
 sprite layers from the indexed `roguelike-characters` pack. See

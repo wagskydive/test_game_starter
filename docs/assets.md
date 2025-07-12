@@ -1,6 +1,8 @@
 # Asset Pipeline
 
-**Status:** Asset packs are not yet integrated. Placeholder graphics will be used until runtime downloads are enabled.
+**Status:** Asset packs are integrated through a simple download script.
+Run `python scripts/download_assets.py` to fetch and index the packs the first
+time you need them.
 
 Run `python scripts/generate_assets.py` to create placeholder sprites in
 `assets/generated`. The script uses the color palette defined in

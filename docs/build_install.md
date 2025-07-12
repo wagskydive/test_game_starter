@@ -20,4 +20,6 @@ pytest -q
 ```
 
 
-**Note:** This project is still in development. Asset packs will be downloaded at runtime once fully integrated.
+**Note:** This project is still in development. Run `python scripts/download_assets.py`
+to download the Kenney asset packs if you want to see real graphics instead of
+the generated placeholders.
