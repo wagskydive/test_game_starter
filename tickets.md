@@ -304,3 +304,170 @@
 - Allow configuration via a file or environment variables.
 - Add tests covering new logging features.
 - Update documentation in `docs/logging_util.md`.
+
+## Ticket 29 - NPC Health Extensions
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Add temperature, wound and disease tracking to `NPC`.
+- Include healing mechanics and tests for damage over time.
+
+## Ticket 30 - Social Status and Impressiveness
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Implement `impressiveness` stat affecting NPC reactions.
+- Track social status changes through actions and items.
+
+## Ticket 31 - Crafting Stations
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Add station classes such as `Anvil`, `Firepit`, `Loom`, and `Kiln`.
+- Require appropriate station for certain recipes.
+
+## Ticket 32 - Blueprints and Skill Requirements
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Introduce blueprint items and crafting skill levels.
+- Some recipes require blueprints or high skill to craft.
+
+## Ticket 33 - Reinforcement Learning NPCs
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Prototype RL-based training for selected NPC behaviors.
+
+## Ticket 34 - Faction Goals and Group AI
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Give factions group objectives and simple coordination logic.
+
+## Ticket 35 - Offline LLM Integration
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Support running an offline model via the Godot-LLM plugin.
+
+## Ticket 36 - Procedural Quest Generator
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Generate quests procedurally when no LLM is available.
+
+## Ticket 37 - Godot Project Skeleton
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Add a basic Godot project with scenes and integrate Python modules.
+
+## Ticket 38 - NPC Animation States
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Implement animations for idle, walk, angry, excited and sitting.
+
+## Ticket 39 - Art Palette and Layered Sprites
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Define a common color palette and layered sprite format.
+- Update asset pipeline to generate placeholder layers.
+
+## Ticket 40 - UI Style Pass and New Screens
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Apply consistent styling to menus and inventory.
+- Add screens for character stats and crafting.
+
+## Ticket 41 - Weather and Seasons Simulation
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Simulate weather patterns and seasonal effects on temperature.
+
+## Ticket 42 - Trading and Economy System
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Implement a currency and trading mechanics with NPCs.
+
+## Ticket 43 - NPC Families and Relationships
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Track familial ties and friendships between NPCs.
+
+## Ticket 44 - Advanced Pathfinding
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Add avoidance and dynamic obstacle handling to pathfinding.
+
+## Ticket 45 - Nested Containers and Volume
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Support containers within containers and volume-based limits.
+
+## Ticket 46 - Documentation Diagrams
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Provide flowcharts for worldgen, crafting, and story anchors.
+
+## Ticket 47 - NPC Daily Schedules
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Give NPCs schedules for work, rest and social activities.
+
+## Ticket 48 - Day/Night Cycle and Energy
+- [ ] Started
+- [ ] Coded
+- [ ] Tested
+- [ ] Reviewed
+- [ ] Documented
+- Implement a day/night cycle and energy stat affecting actions.
+
