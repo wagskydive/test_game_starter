@@ -24,7 +24,10 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 ## Roadmap and Milestones
 
 ### Step 3 - Godot migration
-- [ ] Migrate to Godot the get the complete codebase working within the Godot Engine
+- [ ] Create a Godot 4 project skeleton with scenes and folder structure
+- [ ] Port existing Python modules to GDScript or integrate via GDExtension
+- [ ] Hook up world generation, NPC, item and crafting systems in Godot
+- [ ] Configure automated tests using Godot's testing framework
 - [ ] Make an install and build guide for the end user
 
 
@@ -49,5 +52,18 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 - [ ] Trading and economy
 - [ ] NPC families and relationships
 - [ ] Nested containers and volume limits
+- [ ] NPC health extensions
+- [ ] Social status and impressiveness
+- [ ] Crafting stations
+- [ ] Blueprints and skill requirements
+- [ ] Reinforcement learning NPCs
+- [ ] Advanced pathfinding
+- [ ] NPC daily schedules
+- [ ] Day/night cycle and energy
+- [ ] Documentation diagrams
+- [ ] Settlements and ruins generation
+- [ ] Destructible tiles and tile grouping
+- [ ] Expanded item definitions
+- [ ] Equipment slots
 
 Use the checkboxes to monitor progress as features are completed.
