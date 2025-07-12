@@ -1,6 +1,6 @@
 from __future__ import annotations
 from heapq import heappush, heappop
-from typing import List, Tuple, Set, Optional
+from typing import List, Tuple, Set, Optional, Callable
 
 from .game_map import GameMap
 
@@ -17,9 +17,12 @@ def find_path(
     goal: Coord,
     game_map: GameMap,
     obstacles: Optional[Set[Coord]] = None,
+    avoid: Optional[Set[Coord]] = None,
+    is_blocked: Optional[Callable[[Coord], bool]] = None,
 ) -> List[Coord]:
-    """Return a path from start to goal using A* search."""
+    """Return a path from start to goal using A* search with avoidance."""
     obstacles = obstacles or set()
+    avoid = avoid or set()
     open_set = []
     heappush(open_set, (heuristic(start, goal), 0, start, [start]))
     visited: Set[Coord] = set()
@@ -39,7 +42,12 @@ def find_path(
                 continue
             if next_pos in obstacles or next_pos in visited:
                 continue
-            new_cost = cost + 1
+            if is_blocked is not None and is_blocked(next_pos):
+                continue
+            step_cost = 1
+            if next_pos in avoid:
+                step_cost += 4
+            new_cost = cost + step_cost
             priority = new_cost + heuristic(next_pos, goal)
             heappush(
                 open_set, (priority, new_cost, next_pos, path + [next_pos])

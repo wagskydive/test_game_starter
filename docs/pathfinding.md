@@ -2,7 +2,10 @@
 
 The `pathfinding` module implements a very small A* search over a `GameMap`.
 It returns a list of coordinates from a start to a goal position. Obstacles can
-be provided as a set of blocked coordinates.
+be provided as a set of blocked coordinates. Tiles in an `avoid` set are treated
+with higher movement cost so paths will try to go around them. A dynamic
+`is_blocked` callback can be supplied to check temporary obstacles during
+search.
 
 ```python
 from pathfinding import find_path

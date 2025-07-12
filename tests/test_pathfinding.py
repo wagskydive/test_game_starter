@@ -23,3 +23,10 @@ def test_find_path_with_obstacle():
     path = find_path((0, 0), (2, 0), m, obstacles)
     assert (1, 0) not in path
     assert path[0] == (0, 0) and path[-1] == (2, 0)
+
+
+def test_find_path_avoid_tiles():
+    m = make_map(3, 3)
+    avoid = {(1, 1)}
+    path = find_path((0, 1), (2, 1), m, avoid=avoid)
+    assert (1, 1) not in path

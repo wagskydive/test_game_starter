@@ -10,6 +10,7 @@ class Item:
     weight: float = 0.0
     volume: float = 0.0
     durability: int = 100
+    is_blueprint: bool = False
     max_volume: Optional[float] = None
     contents: Optional["Inventory"] = None
 
