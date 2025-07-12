@@ -9,7 +9,9 @@ from item import Item
 rock = Item(name='rock', weight=2.5)
 ```
 
-Items have `name`, `weight`, `volume`, and `durability` attributes.
+Items have `name`, `weight`, `volume`, and `durability` attributes. Items may
+optionally define `max_volume` and hold an internal `Inventory` when used as
+containers.
 
 ## Inventory
 
@@ -19,4 +21,7 @@ inv = Inventory()
 inv.add(rock)
 ```
 
-The inventory holds `Item` objects and can report the total weight of its contents using `total_weight()`.
+An `Inventory` can enforce a volume limit by passing `max_volume` when
+constructed. Use `can_add(item)` or rely on `add()` raising `ValueError` when the
+capacity would be exceeded. Inventories may be nested by storing container items
+that themselves have an `Inventory` instance.

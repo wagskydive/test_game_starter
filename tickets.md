@@ -174,28 +174,28 @@ Implement a currency and trading mechanics with NPCs.
 Track familial ties and friendships between NPCs.
 
 ## Ticket 22 - Nested Containers and Volume
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Support containers within containers and volume-based limits.
 
 ## Ticket 23 - NPC Health Extensions
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Add temperature, wound and disease tracking to `NPC`.
 Include healing mechanics and tests for damage over time.
 
 ## Ticket 24 - Social Status and Impressiveness
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Implement `impressiveness` stat affecting NPC reactions.
 Track social status changes through actions and items.
 
@@ -250,11 +250,11 @@ Give NPCs schedules for work, rest and social activities.
 Implement a day/night cycle and energy stat affecting actions.
 
 ## Ticket 31 - Documentation Diagrams
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Provide flowcharts for worldgen, crafting, and story anchors.
 
 ## Ticket 32 - Settlements and Ruins Generation

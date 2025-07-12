@@ -14,6 +14,10 @@ class NPC:
     safety: int = 100
     social: int = 100
     status: int = 100
+    temperature: float = 37.0
+    wounds: List[int] = field(default_factory=list)
+    diseases: List[str] = field(default_factory=list)
+    impressiveness: int = 0
     personality_traits: List[str] = field(default_factory=list)
     emotional_state: str = "neutral"
     faction: Optional[str] = None
@@ -28,6 +32,7 @@ class NPC:
         safety_rate: int = 0,
         social_rate: int = 0,
         status_rate: int = 0,
+        temperature_rate: float = 0.0,
     ) -> None:
         """Advance time by reducing basic needs."""
         self.hunger = max(0, self.hunger - hunger_rate)
@@ -36,6 +41,11 @@ class NPC:
         self.safety = max(0, self.safety - safety_rate)
         self.social = max(0, self.social - social_rate)
         self.status = max(0, self.status - status_rate)
+        self.temperature += temperature_rate
+        if self.wounds:
+            self.health = max(0, self.health - len(self.wounds))
+        if self.diseases:
+            self.health = max(0, self.health - len(self.diseases))
 
     def satisfy(self, rest: int = 0, safety: int = 0, social: int = 0, status: int = 0) -> None:
         """Increase needs scores without exceeding 100."""
@@ -43,6 +53,29 @@ class NPC:
         self.safety = min(100, self.safety + safety)
         self.social = min(100, self.social + social)
         self.status = min(100, self.status + status)
+
+    def heal(self, amount: int = 0) -> None:
+        self.health = min(100, self.health + amount)
+
+    def add_wound(self, damage: int) -> None:
+        self.wounds.append(damage)
+        self.health = max(0, self.health - damage)
+
+    def heal_wound(self) -> None:
+        if self.wounds:
+            self.wounds.pop(0)
+
+    def add_disease(self, name: str) -> None:
+        if name not in self.diseases:
+            self.diseases.append(name)
+
+    def cure_disease(self, name: str) -> None:
+        if name in self.diseases:
+            self.diseases.remove(name)
+
+    def adjust_status(self, delta: int) -> None:
+        self.status = max(0, min(100, self.status + delta))
+        self.impressiveness = max(0, self.impressiveness + delta)
 
     def add_trait(self, trait: str) -> None:
         if trait not in self.personality_traits:
