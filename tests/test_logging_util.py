@@ -1,8 +1,9 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath('src'))
 
-from logging_util import create_logger
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.logging_util import create_logger
 
 
 def test_logger_creates_file(tmp_path):

@@ -1,7 +1,9 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
+import os
+import sys
 
-from llm_integration import generate_dialogue
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.llm_integration import generate_dialogue
 
 
 def test_generate_dialogue_enabled():

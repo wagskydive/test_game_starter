@@ -1,15 +1,17 @@
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import List, Optional
+
 
 @dataclass
 class Item:
     """A basic item with minimal stats."""
+
     name: str
     weight: float = 0.0
     volume: float = 0.0
     durability: int = 100
     max_volume: Optional[float] = None
-    contents: Optional['Inventory'] = None
+    contents: Optional["Inventory"] = None
 
 
 class Inventory:

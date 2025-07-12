@@ -1,12 +1,13 @@
 import os
 import sys
-sys.path.insert(0, os.path.abspath('src'))
 
-from player import Player
-from item import Item
-from npc import NPC
-from game_map import GameMap
-from save_load import save_game, load_game
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.player import Player
+from src.item import Item
+from src.npc import NPC
+from src.game_map import GameMap
+from src.save_load import save_game, load_game
 
 
 def test_save_load_round_trip(tmp_path):

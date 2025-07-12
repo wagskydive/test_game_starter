@@ -3,7 +3,10 @@ import os
 from logging import Logger
 from logging.handlers import RotatingFileHandler
 
-def create_logger(name: str, level: str = "INFO", file_path: str = "game.log") -> Logger:
+
+def create_logger(
+    name: str, level: str = "INFO", file_path: str = "game.log"
+) -> Logger:
     """Create and configure a logger.
 
     Parameters

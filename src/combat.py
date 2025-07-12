@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import random
-from item import Item
-from npc import NPC
+from .item import Item
+from .npc import NPC
 
 
 def _damage_from_item(item: Item) -> int:
@@ -10,7 +10,9 @@ def _damage_from_item(item: Item) -> int:
     return max(1, int(item.weight))
 
 
-def melee_attack(attacker: NPC, defender: NPC, weapon: Item, hit_chance: float = 0.8) -> bool:
+def melee_attack(
+    attacker: NPC, defender: NPC, weapon: Item, hit_chance: float = 0.8
+) -> bool:
     """Perform a melee attack. Returns True on hit."""
     if random.random() <= hit_chance:
         defender.health = max(0, defender.health - _damage_from_item(weapon))
@@ -19,7 +21,9 @@ def melee_attack(attacker: NPC, defender: NPC, weapon: Item, hit_chance: float =
     return False
 
 
-def ranged_attack(attacker: NPC, defender: NPC, weapon: Item, hit_chance: float = 0.6) -> bool:
+def ranged_attack(
+    attacker: NPC, defender: NPC, weapon: Item, hit_chance: float = 0.6
+) -> bool:
     """Perform a ranged attack. Returns True on hit."""
     if random.random() <= hit_chance:
         defender.health = max(0, defender.health - _damage_from_item(weapon))

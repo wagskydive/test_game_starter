@@ -12,7 +12,9 @@ ADJACENCY = {
 TILES = list(ADJACENCY.keys())
 
 
-def _neighbors(x: int, y: int, width: int, height: int) -> List[Tuple[int, int]]:
+def _neighbors(
+    x: int, y: int, width: int, height: int
+) -> List[Tuple[int, int]]:
     coords = []
     if x > 0:
         coords.append((x - 1, y))
@@ -55,14 +57,18 @@ def generate_map(width: int, height: int, seed: int | None = None):
         for y in range(height):
             for x in range(width):
                 options = cells[y][x]
-                if len(options) > 1 and (min_opts is None or len(options) < min_opts):
+                if len(options) > 1 and (
+                    min_opts is None or len(options) < min_opts
+                ):
                     min_opts = len(options)
                     target = (x, y)
         if target is None:
             break
         collapse_cell(*target)
 
-    result = [[next(iter(cells[y][x])) for x in range(width)] for y in range(height)]
+    result = [
+        [next(iter(cells[y][x])) for x in range(width)] for y in range(height)
+    ]
     return result
 
 

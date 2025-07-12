@@ -1,8 +1,10 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
+import os
+import sys
 
-from item import Item, Inventory
-from crafting import Recipe, craft
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.item import Item, Inventory
+from src.crafting import Recipe, craft
 
 
 def test_craft_success():

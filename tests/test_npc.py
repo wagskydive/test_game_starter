@@ -1,6 +1,9 @@
-import os, sys
-sys.path.insert(0, os.path.abspath('src'))
-from npc import NPC
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.npc import NPC
 
 
 def test_npc_defaults():
