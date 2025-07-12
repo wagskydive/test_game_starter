@@ -168,7 +168,7 @@ Implement a currency and trading mechanics with NPCs.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Track familial ties and friendships between NPCs.
 
@@ -202,7 +202,7 @@ Track social status changes through actions and items.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Add station classes such as `Anvil`, `Firepit`, `Loom`, and `Kiln`.
 Require appropriate station for certain recipes.
@@ -211,7 +211,7 @@ Require appropriate station for certain recipes.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Introduce blueprint items and crafting skill levels.
 Some recipes require blueprints or high skill to craft.
@@ -220,7 +220,7 @@ Some recipes require blueprints or high skill to craft.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Prototype RL-based training for selected NPC behaviors.
 
@@ -228,7 +228,7 @@ Prototype RL-based training for selected NPC behaviors.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Add avoidance and dynamic obstacle handling to pathfinding.
 
@@ -236,7 +236,7 @@ Add avoidance and dynamic obstacle handling to pathfinding.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Give NPCs schedules for work, rest and social activities.
 
@@ -244,7 +244,7 @@ Give NPCs schedules for work, rest and social activities.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Implement a day/night cycle and energy stat affecting actions.
 
@@ -260,7 +260,7 @@ Provide flowcharts for worldgen, crafting, and story anchors.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Extend `worldgen` with placement of villages, castles, ruins and trade posts.
 Include special "megalith" tiles that are mostly indestructible.
@@ -271,7 +271,7 @@ Document in `docs/worldgen_settlements.md`.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Add support for marking tiles as destructible or permanent.
 Implement grouping of tiles into structures (houses, mountains, ships).
@@ -419,7 +419,7 @@ Document in `docs/equipment.md`.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 - Implement simple A* pathfinding in `src/pathfinding.py` for NPC movement.
 - Integrate pathfinding into `NPC.move` when a path is required.
