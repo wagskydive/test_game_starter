@@ -41,6 +41,8 @@ A small prototype for map generation is available in `src/worldgen.py`. It uses 
 ```bash
 python src/worldgen.py
 ```
+Tile metadata such as destructibility is defined in
+[docs/tile_groups.md](docs/tile_groups.md).
 
 
 ### Item and Inventory Prototype
@@ -102,9 +104,10 @@ for details.
 
 ### NPC Needs and Personality
 
-`NPC` now includes additional needs and personality traits. See
-[docs/npc_needs.md](docs/npc_needs.md) and
-[docs/npc_personality.md](docs/npc_personality.md).
+`NPC` now includes additional needs, personality traits and relationship
+tracking. See [docs/npc_needs.md](docs/npc_needs.md),
+[docs/npc_personality.md](docs/npc_personality.md) and
+[docs/npc_relationships.md](docs/npc_relationships.md).
 `animation_state` tracks simple animations such as walking or sitting.
 See [docs/npc_animation.md](docs/npc_animation.md).
 

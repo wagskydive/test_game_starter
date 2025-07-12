@@ -46,3 +46,8 @@ activities. Use `get_activity(hour)` to retrieve the planned activity.
 bob = NPC(name="Bob", schedule={"morning": "work", "night": "sleep"})
 current = bob.get_activity(8)  # 'work'
 ```
+
+## Relationships
+
+NPCs track family ties and friendships. Use `add_parent`, `add_child`,
+`befriend` and `unfriend` to manage them.

@@ -11,7 +11,8 @@ from src.npc import NPC
 def test_get_tile_in_bounds():
     data = generate_map(3, 3, seed=1)
     m = GameMap(3, 3, data)
-    assert m.get_tile(0, 0) in {'water', 'plains', 'forest', 'hills', 'mountains'}
+    allowed = {'water', 'plains', 'forest', 'hills', 'mountains', 'village', 'castle', 'ruins', 'trade_post', 'megalith'}
+    assert m.get_tile(0, 0) in allowed
 
 
 def test_get_tile_out_of_bounds():

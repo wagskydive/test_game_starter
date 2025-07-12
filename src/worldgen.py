@@ -4,10 +4,15 @@ from typing import List, Set, Tuple
 # Adjacency rules for tiles used by the wave function collapse algorithm
 ADJACENCY = {
     "water": {"water", "plains"},
-    "plains": {"water", "plains", "forest", "hills"},
-    "forest": {"plains", "forest"},
-    "hills": {"plains", "hills", "mountains"},
-    "mountains": {"hills", "mountains"},
+    "plains": {"water", "plains", "forest", "hills", "village", "castle", "ruins", "trade_post", "megalith"},
+    "forest": {"plains", "forest", "village", "ruins", "trade_post", "megalith", "castle"},
+    "hills": {"plains", "hills", "mountains", "castle", "ruins", "trade_post", "megalith"},
+    "mountains": {"hills", "mountains", "castle", "megalith", "trade_post", "ruins"},
+    "village": {"plains", "forest", "hills", "mountains", "megalith"},
+    "castle": {"plains", "hills", "mountains", "ruins", "castle", "trade_post", "megalith", "village"},
+    "ruins": {"plains", "forest", "hills", "megalith", "castle", "trade_post"},
+    "trade_post": {"plains", "forest", "hills", "megalith", "castle", "mountains", "trade_post", "ruins"},
+    "megalith": {"plains", "hills", "mountains", "castle", "trade_post", "ruins", "megalith"},
 }
 TILES = list(ADJACENCY.keys())
 
@@ -25,6 +30,34 @@ def _neighbors(
     if y < height - 1:
         coords.append((x, y + 1))
     return coords
+
+
+def _place_settlements(map_data: List[List[str]], seed: int | None = None) -> None:
+    """Place settlement and special tiles deterministically."""
+    random.seed(seed)
+    height = len(map_data)
+    width = len(map_data[0])
+    structures = ["village", "castle", "ruins", "trade_post"]
+    def pick_location() -> Tuple[int, int]:
+        candidates = []
+        for y in range(height):
+            for x in range(width):
+                if map_data[y][x] not in {"plains", "hills", "mountains"}:
+                    continue
+                neighbors = _neighbors(x, y, width, height)
+                if any(map_data[ny][nx] == "water" for nx, ny in neighbors):
+                    continue
+                candidates.append((x, y))
+        if not candidates:
+            return 0, 0
+        return random.choice(candidates)
+
+    for name in structures:
+        x, y = pick_location()
+        map_data[y][x] = name
+    # Place at least one megalith
+    x, y = pick_location()
+    map_data[y][x] = "megalith"
 
 
 def generate_map(width: int, height: int, seed: int | None = None):
@@ -69,6 +102,7 @@ def generate_map(width: int, height: int, seed: int | None = None):
     result = [
         [next(iter(cells[y][x])) for x in range(width)] for y in range(height)
     ]
+    _place_settlements(result, seed)
     return result
 
 

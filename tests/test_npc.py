@@ -91,3 +91,15 @@ def test_npc_energy_tick():
     n.satisfy(energy=3)
     assert n.energy == 8
 
+
+def test_npc_relationships():
+    parent = NPC(name='Alice')
+    child = NPC(name='Charlie')
+    parent.add_child(child)
+    friend = NPC(name='Dave')
+    child.befriend(friend)
+    assert child in parent.children
+    assert parent in child.parents
+    assert friend in child.friends
+    assert child in friend.friends
+

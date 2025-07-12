@@ -165,11 +165,11 @@ Simulate weather patterns and seasonal effects on temperature.
 Implement a currency and trading mechanics with NPCs.
 
 ## Ticket 21 - NPC Families and Relationships
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Track familial ties and friendships between NPCs.
 
 ## Ticket 22 - Nested Containers and Volume
@@ -257,22 +257,22 @@ Implement a day/night cycle and energy stat affecting actions.
 Provide flowcharts for worldgen, crafting, and story anchors.
 
 ## Ticket 32 - Settlements and Ruins Generation
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Extend `worldgen` with placement of villages, castles, ruins and trade posts.
 Include special "megalith" tiles that are mostly indestructible.
 Write tests ensuring settlements appear when a seed is used.
 Document in `docs/worldgen_settlements.md`.
 
 ## Ticket 33 - Destructible Tiles and Grouping
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Add support for marking tiles as destructible or permanent.
 Implement grouping of tiles into structures (houses, mountains, ships).
 Update tests to cover new attributes and grouping behavior.

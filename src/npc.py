@@ -33,6 +33,9 @@ class NPC:
     emotional_state: str = "neutral"
     faction: Optional[str] = None
     animation_state: AnimationState = AnimationState.IDLE
+    parents: List["NPC"] = field(default_factory=list)
+    children: List["NPC"] = field(default_factory=list)
+    friends: List["NPC"] = field(default_factory=list)
     x: int = 0
     y: int = 0
 
@@ -111,6 +114,30 @@ class NPC:
 
     def leave_faction(self) -> None:
         self.faction = None
+
+    def add_parent(self, parent: "NPC") -> None:
+        if parent not in self.parents:
+            self.parents.append(parent)
+        if self not in parent.children:
+            parent.children.append(self)
+
+    def add_child(self, child: "NPC") -> None:
+        if child not in self.children:
+            self.children.append(child)
+        if self not in child.parents:
+            child.parents.append(self)
+
+    def befriend(self, other: "NPC") -> None:
+        if other not in self.friends:
+            self.friends.append(other)
+        if self not in other.friends:
+            other.friends.append(self)
+
+    def unfriend(self, other: "NPC") -> None:
+        if other in self.friends:
+            self.friends.remove(other)
+        if self in other.friends:
+            other.friends.remove(self)
 
     def set_animation(self, state: AnimationState) -> None:
         """Change the current animation state."""
