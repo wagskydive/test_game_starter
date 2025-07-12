@@ -70,8 +70,10 @@ The `crafting` module defines simple recipes and a `craft` function to combine i
 
 ### Pathfinding Prototype
 
-The `pathfinding` module provides simple A* search used by `NPC.move` when a
-target is supplied. See [docs/pathfinding.md](docs/pathfinding.md) for details.
+The `pathfinding` module provides A* search used by `NPC.move`. It supports
+optional `avoid` tiles with higher movement cost and a dynamic `is_blocked`
+callback for temporary obstacles. See [docs/pathfinding.md](docs/pathfinding.md)
+for details.
 =======
 ### Logging Utility
 
@@ -111,6 +113,12 @@ Anchors can run an `on_trigger` callback when activated.
 Use `generate_quest` from `procedural_quests` for simple quest generation when
 no LLM is available. See [docs/procedural_quests.md](docs/procedural_quests.md).
 
+### RL Training Prototype
+
+`rl_training.RLTrainer` provides a minimal Q-learning helper used for
+experimental NPC training. See [docs/rl_training.md](docs/rl_training.md) for
+details.
+
 ### Modding and Assets
 
 Mods can be placed under `mods/` and loaded using `modding.discover_mods`. Run
@@ -138,3 +146,8 @@ local model. See [docs/llm_integration.md](docs/llm_integration.md).
 
 Use the `WeatherSystem` module to cycle seasons every 30 days and pick random weather. See [docs/weather.md](docs/weather.md).
 NPCs can be affected by weather by passing `WeatherSystem.temperature` to `NPC.tick()`.
+
+### Day and Night Cycle
+
+`time_cycle.TimeSystem` tracks the current hour. Advance time with
+`advance_hour()` and use `NPC.energy` with `tick()` to model fatigue.

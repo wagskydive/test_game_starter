@@ -77,3 +77,17 @@ def test_npc_temperature_adjusts_with_hot_weather():
     n.tick(weather_temperature=40.0)
     assert n.temperature == pytest.approx(37.3, rel=1e-2)
 
+
+def test_npc_schedule():
+    n = NPC(name='Bob', schedule={'morning': 'work', 'evening': 'sleep'})
+    assert n.get_activity(8) == 'work'
+    assert n.get_activity(22) == 'sleep'
+
+
+def test_npc_energy_tick():
+    n = NPC(name='Bob', energy=10)
+    n.tick(energy_rate=5)
+    assert n.energy == 5
+    n.satisfy(energy=3)
+    assert n.energy == 8
+

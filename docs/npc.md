@@ -34,3 +34,13 @@ world = GameMap(5, 5, generate_map(5, 5))
 bob.move(1, 0, world)
 print(bob.x, bob.y)
 ```
+
+## Schedules
+
+NPCs can define a simple daily schedule mapping periods of the day to
+activities. Use `get_activity(hour)` to retrieve the planned activity.
+
+```python
+bob = NPC(name="Bob", schedule={"morning": "work", "night": "sleep"})
+current = bob.get_activity(8)  # 'work'
+```

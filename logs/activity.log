@@ -152,3 +152,11 @@ Sat Jul 12 17:55:18 UTC 2025 - Added new ticket for weather effects
 Sat Jul 12 18:05:11 UTC 2025 - Started Ticket 62
 Sat Jul 12 18:06:15 UTC 2025 - Added weather interaction to NPCs
 Sat Jul 12 18:06:16 UTC 2025 - Updated docs for weather effects
+Sat Jul 12 18:15:02 UTC 2025 - Started Ticket 25: Crafting Stations
+Sat Jul 12 18:16:41 UTC 2025 - Added crafting stations and station requirement
+Sat Jul 12 18:17:04 UTC 2025 - Started Ticket 26: Blueprints and Skill Requirements
+Sat Jul 12 18:18:22 UTC 2025 - Implemented blueprints and crafting skill requirements
+Sat Jul 12 18:19:16 UTC 2025 - Added RL training prototype
+Sat Jul 12 18:20:24 UTC 2025 - Improved pathfinding with avoidance and dynamic obstacles
+Sat Jul 12 18:21:43 UTC 2025 - Added NPC daily schedules
+Sat Jul 12 18:23:36 UTC 2025 - Implemented day/night cycle and energy

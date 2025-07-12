@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Optional, Set, Tuple, List
+from typing import Optional, Set, Tuple, List, Dict
 
 from .animation_state import AnimationState
 
@@ -15,6 +15,7 @@ class NPC:
     hunger: int = 100
     thirst: int = 100
     rest: int = 100
+    energy: int = 100
     safety: int = 100
     social: int = 100
     status: int = 100
@@ -22,6 +23,8 @@ class NPC:
     wounds: List[int] = field(default_factory=list)
     diseases: List[str] = field(default_factory=list)
     impressiveness: int = 0
+    crafting_skill: int = 0
+    schedule: Dict[str, str] = field(default_factory=dict)
     personality_traits: List[str] = field(default_factory=list)
     emotional_state: str = "neutral"
     faction: Optional[str] = None
@@ -34,6 +37,7 @@ class NPC:
         hunger_rate: int = 1,
         thirst_rate: int = 1,
         rest_rate: int = 1,
+        energy_rate: int = 1,
         safety_rate: int = 0,
         social_rate: int = 0,
         status_rate: int = 0,
@@ -44,6 +48,7 @@ class NPC:
         self.hunger = max(0, self.hunger - hunger_rate)
         self.thirst = max(0, self.thirst - thirst_rate)
         self.rest = max(0, self.rest - rest_rate)
+        self.energy = max(0, self.energy - energy_rate)
         self.safety = max(0, self.safety - safety_rate)
         self.social = max(0, self.social - social_rate)
         self.status = max(0, self.status - status_rate)
@@ -56,10 +61,16 @@ class NPC:
             self.health = max(0, self.health - len(self.diseases))
 
     def satisfy(
-        self, rest: int = 0, safety: int = 0, social: int = 0, status: int = 0
+        self,
+        rest: int = 0,
+        safety: int = 0,
+        social: int = 0,
+        status: int = 0,
+        energy: int = 0,
     ) -> None:
         """Increase needs scores without exceeding 100."""
         self.rest = min(100, self.rest + rest)
+        self.energy = min(100, self.energy + energy)
         self.safety = min(100, self.safety + safety)
         self.social = min(100, self.social + social)
         self.status = min(100, self.status + status)
@@ -128,3 +139,17 @@ class NPC:
         if game_map is None or game_map.in_bounds(new_x, new_y):
             self.x = new_x
             self.y = new_y
+
+    def get_activity(self, hour: int) -> str:
+        """Return the scheduled activity for the given hour."""
+        if not self.schedule:
+            return "idle"
+        if 6 <= hour < 12:
+            period = "morning"
+        elif 12 <= hour < 18:
+            period = "afternoon"
+        elif 18 <= hour < 24:
+            period = "evening"
+        else:
+            period = "night"
+        return self.schedule.get(period, "idle")

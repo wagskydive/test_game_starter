@@ -199,53 +199,53 @@ Implement `impressiveness` stat affecting NPC reactions.
 Track social status changes through actions and items.
 
 ## Ticket 25 - Crafting Stations
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Add station classes such as `Anvil`, `Firepit`, `Loom`, and `Kiln`.
 Require appropriate station for certain recipes.
 
 ## Ticket 26 - Blueprints and Skill Requirements
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Introduce blueprint items and crafting skill levels.
 Some recipes require blueprints or high skill to craft.
 
 ## Ticket 27 - Reinforcement Learning NPCs
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Prototype RL-based training for selected NPC behaviors.
 
 ## Ticket 28 - Advanced Pathfinding
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Add avoidance and dynamic obstacle handling to pathfinding.
 
 ## Ticket 29 - NPC Daily Schedules
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Give NPCs schedules for work, rest and social activities.
 
 ## Ticket 30 - Day/Night Cycle and Energy
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Implement a day/night cycle and energy stat affecting actions.
 
 ## Ticket 31 - Documentation Diagrams
