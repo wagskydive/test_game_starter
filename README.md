@@ -44,3 +44,7 @@ The `item` module provides an `Item` dataclass and `Inventory` container. See [d
 ### NPC Prototype
 
 A minimal NPC class is defined in `src/npc.py` with health, hunger, and thirst attributes. See [docs/npc.md](docs/npc.md) for usage.
+
+### Player Prototype
+
+The `player` module provides a `Player` class that inherits from `NPC` and includes an `Inventory`. See [docs/player.md](docs/player.md) for usage.

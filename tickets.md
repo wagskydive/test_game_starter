@@ -51,3 +51,14 @@
 - Add a `tick` method to reduce hunger and thirst.
 - Write tests in `tests/test_npc.py` for initialization and hunger/thirst reduction.
 - Document usage in `docs/npc.md`.
+
+## Ticket 6 - Player Class With Inventory
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+- Implement `src/player.py` as a subclass of `NPC` with an `Inventory` attribute.
+- Add a `pick_up` method to move an `Item` into the inventory.
+- Create tests in `tests/test_player.py` for inventory interaction and default stats.
+- Document usage in `docs/player.md`.
