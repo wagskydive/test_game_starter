@@ -479,3 +479,11 @@
 - [x] Reviewed
 - [x] Documented
 - Create planning.md summarizing completed features and future milestones.
+
+## Ticket 50 - Wave Function Collapse Generator
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+- Replace Perlin noise world generator with wave function collapse algorithm.

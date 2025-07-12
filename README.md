@@ -19,7 +19,7 @@ This will create the following directories:
 - `tests`
 - `logs`
 
-It also ensures `requirements.txt` exists with required packages and installs them. The initial dependencies are `pytest` for testing and `noise` for map generation.
+It also ensures `requirements.txt` exists with required packages and installs them. The initial dependency is `pytest` for testing.
 
 To execute the automated tests:
 
@@ -29,7 +29,7 @@ pytest -q
 
 ### World Generation Prototype
 
-A small prototype for map generation is available in `src/worldgen.py`. It is documented in more detail under [`docs/worldgen.md`](docs/worldgen.md). Run the module directly to print a 10x10 map:
+A small prototype for map generation is available in `src/worldgen.py`. It uses a basic wave function collapse algorithm and is documented in more detail under [`docs/worldgen.md`](docs/worldgen.md). Run the module directly to print a 10x10 map:
 
 ```bash
 python src/worldgen.py
