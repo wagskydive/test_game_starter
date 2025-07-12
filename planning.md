@@ -32,7 +32,7 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 
 
 ### Step 4 – Visuals and UI
-- [ ] Visual assets are downloaded at runtime.
+- [x] Visual assets are downloaded at runtime.
 - [ ] environment: https://kenney.nl/media/pages/assets/tiny-town/5e46f9e551-1735736916/kenney_tiny-town.zip
 - [ ] characters: https://kenney.nl/media/pages/assets/roguelike-characters/dbeea49dc8-1729196490/kenney_roguelike-characters.zip
 - [ ] Create a system for the characters using the assets: https://kenney.nl/assets/roguelike-characters

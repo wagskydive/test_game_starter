@@ -52,11 +52,11 @@ Add tests using Godot's test framework if possible or provide manual steps.
 Document UI setup in `docs/ui.md`.
 
 ## Ticket 7 - Runtime Asset Download
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Download required Kenney asset packs automatically at runtime if missing.
 
 ## Ticket 8 - Environment Asset Pack
