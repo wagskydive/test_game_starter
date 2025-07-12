@@ -23,14 +23,24 @@ This document tracks feature milestones and planned tasks to help coordinate dev
 
 ## Roadmap and Milestones
 
-### Step 4 – Story and Events
-- [ ] Procedural quest generator
-- [ ] Expanded event system
+### Step 3 - Godot migration
+- [ ] Migrate to Godot the get the complete codebase working within the Godot Engine
+- [ ] Make an install and build guide for the end user
 
-### Step 5 – Visuals and UI
+
+### Step 4 – Visuals and UI
+- [ ] Visual assets are downloaded at runtime.
+- [ ] environment: https://kenney.nl/media/pages/assets/tiny-town/5e46f9e551-1735736916/kenney_tiny-town.zip
+- [ ] characters: https://kenney.nl/media/pages/assets/roguelike-characters/dbeea49dc8-1729196490/kenney_roguelike-characters.zip
+- [ ] Create a system for the characters using the assets: https://kenney.nl/assets/roguelike-characters
+- [ ] Map the tilset from: https://kenney.nl/assets/tiny-town to our map generator
 - [ ] Art palette and layered sprites
 - [ ] UI style pass and additional screens
 - [ ] NPC animation states
+
+### Step 5 – Story and Events
+- [ ] Procedural quest generator
+- [ ] Expanded event system
 
 ### Step 6 – Advanced Systems
 - [ ] Faction goals and group AI
