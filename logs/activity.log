@@ -71,3 +71,7 @@ Sat Jul 12 13:01:32 UTC 2025 - Installed dependencies and ran pytest
 Sat Jul 12 13:01:35 UTC 2025 - Marked Ticket 9 as Coded, Tested, Documented
 Sat Jul 12 13:01:39 UTC 2025 - Marked Ticket 9 as Reviewed
 Sat Jul 12 13:15:30 UTC 2025 - Created new tickets 14-28 from design and log review
+Sat Jul 12 13:23:48 UTC 2025 - Starting Ticket 18: Basic Combat System
+Sat Jul 12 13:24:46 UTC 2025 - Implemented combat system and documentation
+Sat Jul 12 13:25:54 UTC 2025 - Ran pytest after combat addition
+Sat Jul 12 13:26:01 UTC 2025 - Marked Ticket 18 as Tested, Reviewed, Documented

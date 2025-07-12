@@ -79,4 +79,10 @@ Use `logging_util.create_logger` to create loggers for the game. See [docs/loggi
 
 The `save_load` module saves the player's state, NPCs and map data to a JSON file and reloads it later. See [docs/save_load.md](docs/save_load.md) for details.
 
+### Combat Prototype
+
+The `combat` module implements simple melee and ranged attack helpers. Damage
+is based on the attacking item's weight and reduces the weapon's durability.
+See [docs/combat.md](docs/combat.md) for usage.
+
 
