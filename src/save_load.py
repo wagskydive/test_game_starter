@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from typing import List, Tuple
+from typing import List, Tuple, Dict, Any, Optional
 
 from player import Player
 from npc import NPC
@@ -29,7 +29,13 @@ def _item_from_dict(data: dict) -> Item:
     )
 
 
-def save_game(path: str, player: Player, npcs: List[NPC], game_map: GameMap) -> None:
+def save_game(
+    path: str,
+    player: Player,
+    npcs: List[NPC],
+    game_map: GameMap,
+    story_state: Optional[Dict[str, Any]] = None,
+) -> None:
     """Save the provided game state to ``path`` in JSON format."""
     data = {
         "player": {
@@ -49,6 +55,7 @@ def save_game(path: str, player: Player, npcs: List[NPC], game_map: GameMap) -> 
                 "thirst": n.thirst,
                 "x": n.x,
                 "y": n.y,
+                "faction": n.faction,
             }
             for n in npcs
         ],
@@ -57,12 +64,13 @@ def save_game(path: str, player: Player, npcs: List[NPC], game_map: GameMap) -> 
             "height": game_map.height,
             "data": game_map.data,
         },
+        "story_state": story_state or {},
     }
     with open(path, "w") as f:
         json.dump(data, f)
 
 
-def load_game(path: str) -> Tuple[Player, List[NPC], GameMap]:
+def load_game(path: str) -> Tuple[Player, List[NPC], GameMap, Dict[str, Any]]:
     """Load the game state from ``path`` and return objects."""
     with open(path) as f:
         data = json.load(f)
@@ -87,6 +95,7 @@ def load_game(path: str) -> Tuple[Player, List[NPC], GameMap]:
             thirst=n.get("thirst", 100),
             x=n.get("x", 0),
             y=n.get("y", 0),
+            faction=n.get("faction"),
         )
         for n in data.get("npcs", [])
     ]
@@ -94,5 +103,6 @@ def load_game(path: str) -> Tuple[Player, List[NPC], GameMap]:
     m_data = data["map"]
     game_map = GameMap(m_data["width"], m_data["height"], m_data["data"])
 
-    return player, npcs, game_map
+    story_state = data.get("story_state", {})
+    return player, npcs, game_map, story_state
 

@@ -16,3 +16,8 @@ YYYY-MM-DD HH:MM:SS,ms - logger_name - LEVEL - message
 ```
 
 Set the `level` parameter to control which messages are recorded.
+
+-Environment variables can modify behavior and log rotation:
+
+- `LOG_TO_CONSOLE=1` will also output logs to the console.
+- `LOG_MAX_BYTES` sets the maximum size of the log file before rotation.

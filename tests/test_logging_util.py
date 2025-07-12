@@ -26,3 +26,11 @@ def test_logger_filters_messages(tmp_path):
         content = f.read()
     assert "shown" in content
     assert "hidden" not in content
+
+
+def test_logger_console_handler(monkeypatch, tmp_path):
+    log_file = tmp_path / "console.log"
+    monkeypatch.setenv("LOG_TO_CONSOLE", "1")
+    logger = create_logger("console", file_path=str(log_file))
+    handlers = len(logger.handlers)
+    assert handlers == 2

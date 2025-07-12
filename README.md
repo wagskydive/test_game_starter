@@ -85,4 +85,27 @@ The `combat` module implements simple melee and ranged attack helpers. Damage
 is based on the attacking item's weight and reduces the weapon's durability.
 See [docs/combat.md](docs/combat.md) for usage.
 
+### NPC Needs and Personality
+
+`NPC` now includes additional needs and personality traits. See
+[docs/npc_needs.md](docs/npc_needs.md) and
+[docs/npc_personality.md](docs/npc_personality.md).
+
+### AI Behaviors and Story Anchors
+
+Basic behavior selection is provided in `ai_behavior` and simple story anchors
+are implemented in `story_anchors`. See [docs/ai_behavior.md](docs/ai_behavior.md)
+and [docs/story_anchors.md](docs/story_anchors.md).
+
+### Modding and Assets
+
+Mods can be placed under `mods/` and loaded using `modding.discover_mods`. Run
+`scripts/generate_assets.py` to create placeholder assets. See
+[docs/modding.md](docs/modding.md) and [docs/assets.md](docs/assets.md).
+
+### LLM Integration
+
+Use `generate_dialogue` from `llm_integration` for optional text generation.
+Set `DISABLE_LLM=1` to disable the feature. See [docs/llm_integration.md](docs/llm_integration.md).
+
 
