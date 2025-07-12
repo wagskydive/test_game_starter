@@ -133,19 +133,19 @@ Generate quests procedurally when no LLM is available.
 Extend the event framework to support complex story triggers.
 
 ## Ticket 17 - Faction Goals and Group AI
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Give factions group objectives and simple coordination logic.
 
 ## Ticket 18 - Offline LLM Integration
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 Support running an offline model via the Godot-LLM plugin.
 
 ## Ticket 19 - Weather and Seasons Simulation

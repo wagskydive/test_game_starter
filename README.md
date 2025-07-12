@@ -106,6 +106,8 @@ Basic behavior selection is provided in `ai_behavior` and simple story anchors
 are implemented in `story_anchors`. See [docs/ai_behavior.md](docs/ai_behavior.md)
 and [docs/story_anchors.md](docs/story_anchors.md).
 Anchors can run an `on_trigger` callback when activated.
+`Faction` groups provide simple shared goals for NPCs. See
+[docs/faction.md](docs/faction.md).
 Use `generate_quest` from `procedural_quests` for simple quest generation when
 no LLM is available. See [docs/procedural_quests.md](docs/procedural_quests.md).
 
@@ -128,6 +130,7 @@ character stats and crafting screens.
 ### LLM Integration
 
 Use `generate_dialogue` from `llm_integration` for optional text generation.
-Set `DISABLE_LLM=1` to disable the feature. See [docs/llm_integration.md](docs/llm_integration.md).
+Set `DISABLE_LLM=1` to disable the feature or call `load_offline_model` to use a
+local model. See [docs/llm_integration.md](docs/llm_integration.md).
 
 
