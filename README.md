@@ -29,7 +29,7 @@ pytest -q
 
 ### World Generation Prototype
 
-A small prototype for map generation is available in `src/worldgen.py`. Run it directly to print a 10x10 map:
+A small prototype for map generation is available in `src/worldgen.py`. It is documented in more detail under [`docs/worldgen.md`](docs/worldgen.md). Run the module directly to print a 10x10 map:
 
 ```bash
 python src/worldgen.py

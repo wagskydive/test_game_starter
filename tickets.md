@@ -24,8 +24,8 @@
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Reviewed
+- [x] Documented
 - Create a Python module `src/worldgen.py` that generates a 2D tile map using Perlin noise.
 - Add unit tests under `tests/test_worldgen.py` to validate map dimensions and deterministic output when a seed is provided.
 
