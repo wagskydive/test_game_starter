@@ -40,3 +40,7 @@ python src/worldgen.py
 
 The `item` module provides an `Item` dataclass and `Inventory` container. See [docs/item.md](docs/item.md) for details.
 
+
+### NPC Prototype
+
+A minimal NPC class is defined in `src/npc.py` with health, hunger, and thirst attributes. See [docs/npc.md](docs/npc.md) for usage.

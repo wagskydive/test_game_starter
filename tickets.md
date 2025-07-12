@@ -40,3 +40,14 @@
 - Add an `Inventory` class for adding/removing items and computing total weight.
 - Write unit tests in `tests/test_item.py` for item creation and inventory management.
 - Document usage in `docs/item.md`.
+
+## Ticket 5 - Basic NPC Class
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+- Implement `src/npc.py` defining a `NPC` dataclass with health, hunger, and thirst.
+- Add a `tick` method to reduce hunger and thirst.
+- Write tests in `tests/test_npc.py` for initialization and hunger/thirst reduction.
+- Document usage in `docs/npc.md`.
