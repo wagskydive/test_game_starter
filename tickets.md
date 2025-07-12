@@ -592,3 +592,11 @@ Allow specifying map width and height via command line options.
 - [x] Reviewed
 - [x] Documented
 Add Pillow to requirements.txt and note that asset packs are not yet integrated. Update README and docs to indicate the project is still in development and not ready for deployment.
+
+## Ticket 65 - Asset Pack Integration Script
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
+Provide a script to download and index the default asset packs. Update documentation.
