@@ -169,3 +169,12 @@ Sat Jul 12 18:40:39 UTC 2025 - Started Ticket 32: Settlements and Ruins Generati
 Sat Jul 12 18:47:55 UTC 2025 - Added settlements and updated worldgen
 Sat Jul 12 18:47:57 UTC 2025 - Started Ticket 33: Destructible Tiles
 Sat Jul 12 18:49:27 UTC 2025 - Added tile groups and destructible flags
+Sat Jul 12 19:00:22 UTC 2025 - Starting Ticket 34: Expanded Item Definitions
+Sat Jul 12 19:00:27 UTC 2025 - Marked Ticket 34 as Started
+Sat Jul 12 19:01:30 UTC 2025 - Added JSON item loader and equipment system
+Sat Jul 12 19:01:33 UTC 2025 - Added JSON item loader and equipment system
+Sat Jul 12 19:01:43 UTC 2025 - Installed pillow for tests
+Sat Jul 12 19:02:07 UTC 2025 - Completed coding and tests for Ticket 34
+Sat Jul 12 19:02:08 UTC 2025 - Starting Ticket 35: Equipment Slots
+Sat Jul 12 19:02:14 UTC 2025 - Implemented equipment slot features
+Sat Jul 12 19:02:38 UTC 2025 - Marked Tickets 34 and 35 as Reviewed

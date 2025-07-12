@@ -48,6 +48,8 @@ Tile metadata such as destructibility is defined in
 ### Item and Inventory Prototype
 
 The `item` module provides an `Item` dataclass and `Inventory` container. See [docs/item.md](docs/item.md) for details.
+Items and crafting recipes can be loaded from JSON using `item_db`. Example files live in the `data/` directory and the format is documented in [docs/items_json.md](docs/items_json.md).
+Inventories also support equipment slots as described in [docs/equipment.md](docs/equipment.md).
 
 
 ### NPC Prototype
