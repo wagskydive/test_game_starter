@@ -134,3 +134,6 @@ Set `DISABLE_LLM=1` to disable the feature or call `load_offline_model` to use a
 local model. See [docs/llm_integration.md](docs/llm_integration.md).
 
 
+### Weather and Seasons
+
+Use the `WeatherSystem` module to cycle seasons every 30 days and pick random weather. See [docs/weather.md](docs/weather.md).
