@@ -1,11 +1,11 @@
 # Tickets
 
 ## Ticket 1 - Project Setup
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
+- [x] Started
+- [x] Coded
+- [x] Tested
 - [ ] Reviewed
-- [ ] Documented
+- [x] Documented
 - Read the design document and create `scripts/setup.bat` that:
   - creates a virtual environment
   - sets up folders (src, scripts, docs, config)
