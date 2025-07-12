@@ -44,7 +44,7 @@ Provide instructions to build the Godot project and install dependencies.
 - [x] Started
 - [x] Coded
 - [x] Tested
-- [ ] Reviewed
+- [x] Reviewed
 - [x] Documented
 Establish initial UI scene in Godot with the asset pack, choose buttons and panels.
 Include a simple main menu and inventory screen layout.
@@ -60,19 +60,19 @@ Document UI setup in `docs/ui.md`.
 Download required Kenney asset packs automatically at runtime if missing.
 
 ## Ticket 8 - Environment Asset Pack
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Integrate Tiny Town tileset into the project.
 
 ## Ticket 9 - Character Asset Pack
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Integrate Roguelike Characters sprites into the project.
 
 ## Ticket 10 - Character System Using Assets
@@ -564,9 +564,9 @@ Document in `docs/equipment.md`.
 - Replace Perlin noise world generator with wave function collapse algorithm.
 
 ## Ticket 61 - UI Asset Pack
-- [ ] Started
-- [ ] Coded
-- [ ] Tested
-- [ ] Reviewed
-- [ ] Documented
+- [x] Started
+- [x] Coded
+- [x] Tested
+- [x] Reviewed
+- [x] Documented
 Add the Kenney UI Pack RPG Expansion as a runtime-downloadable asset. Index its file list in the asset database.

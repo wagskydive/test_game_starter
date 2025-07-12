@@ -68,3 +68,13 @@ def test_ensure_assets_multiple(tmp_path, monkeypatch):
 
     monkeypatch.setattr(asset_manager, 'download_and_index', fail)
     asset_manager.ensure_assets(assets)
+
+
+def test_default_assets_keys():
+    import asset_manager
+    keys = set(asset_manager.DEFAULT_ASSETS.keys())
+    assert keys == {
+        'tiny-town',
+        'roguelike-characters',
+        'ui-pack-rpg-expansion',
+    }
