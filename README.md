@@ -45,6 +45,13 @@ The `item` module provides an `Item` dataclass and `Inventory` container. See [d
 
 A minimal NPC class is defined in `src/npc.py` with health, hunger, and thirst attributes. See [docs/npc.md](docs/npc.md) for usage.
 
+### Map and Movement
+
+The `game_map` module defines a `GameMap` class used for simple bounds checking.
+`NPC` objects now track `x` and `y` coordinates and can be moved with the
+`move()` method.
+See [docs/map.md](docs/map.md) for details.
+
 ### Player Prototype
 
 The `player` module provides a `Player` class that inherits from `NPC` and includes an `Inventory`. See [docs/player.md](docs/player.md) for usage.
