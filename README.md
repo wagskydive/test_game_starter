@@ -59,7 +59,10 @@ The `player` module provides a `Player` class that inherits from `NPC` and inclu
 ### Crafting Prototype
 
 The `crafting` module defines simple recipes and a `craft` function to combine items in an inventory. See [docs/crafting.md](docs/crafting.md) for usage.
+### Logging Utility
 
+Use `logging_util.create_logger` to create loggers for the game. See [docs/logging_util.md](docs/logging_util.md) for details.
+=======
 ### CLI Seed Option
 
 `src/main.py` includes a command line argument for setting the world generation seed. See [docs/cli_seed.md](docs/cli_seed.md) for usage.
@@ -68,9 +71,5 @@ The `crafting` module defines simple recipes and a `craft` function to combine i
 ### Save and Load System
 
 The `save_load` module saves the player's state, NPCs and map data to a JSON file and reloads it later. See [docs/save_load.md](docs/save_load.md) for details.
-
-
-
-
 
 
