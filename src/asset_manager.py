@@ -15,6 +15,15 @@ ASSET_DIR = os.path.join(os.path.dirname(__file__), '..', 'assets')
 ASSET_DB = os.environ.get('ASSET_DB', os.path.join(ASSET_DIR, 'asset_index.json'))
 TEMP_DIR = os.environ.get('ASSET_TEMP', os.path.join(ASSET_DIR, 'temp'))
 
+# Default Kenney asset packs used by the project. These URLs are indexed at
+# runtime using :func:`ensure_assets`. They can be overridden in tests by
+# monkeypatching this dictionary.
+DEFAULT_ASSETS = {
+    'tiny-town': 'https://kenney.nl/media/pages/assets/tiny-town/5e46f9e551-1735736916/kenney_tiny-town.zip',
+    'roguelike-characters': 'https://kenney.nl/media/pages/assets/roguelike-characters/dbeea49dc8-1729196490/kenney_roguelike-characters.zip',
+    'ui-pack-rpg-expansion': 'https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/885ad5ccc0-1677661824/kenney_ui-pack-rpg-expansion.zip',
+}
+
 
 def _download(url: str, dest: str) -> None:
     parsed = urlparse(url)
